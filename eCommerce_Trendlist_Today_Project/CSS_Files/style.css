@@ -1,0 +1,2245 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-decoration: none;
+    /* font-family: sans-serif; */
+}
+
+/* ----------------------------- Header part of the website -------------------------------------------------- */
+header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 2vh 10vw;
+    flex-wrap: wrap;
+}
+.header-div1 {
+    flex-grow: 1 1 auto;
+}
+.header-div1 img {
+    width: 15vw;
+    height: 10vh;
+}
+.header-div2 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    margin-top: 2.5vh;
+}
+.header-div2 i:first-of-type {
+    width: 3.5vw;
+    font-size: 2.3vw;
+    position: relative;
+}
+.header-div2 select {
+    width: 5vw;
+    height: 4.5vh;
+    border: 1px solid rgb(196, 186, 186);
+}
+.header-div2 input {
+    width: 30vw;
+    height: 4.5vh;
+    border: 1px solid rgb(196, 186, 186);
+}
+.header-div2 i:last-of-type {
+    width: 2.5vw;
+    height: 4.5vh;
+    margin-left: -0.5vw;
+    background-color: rgb(104, 41, 162);
+    border-radius: 3px;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    line-height: 4.5vh;
+}
+.header-div3 {
+    flex-grow: 1 1 auto;
+    margin: 3.5vh 0 0 0;
+}
+.header-div3 i {
+    width: 3vw;
+    height: 4.5vh;
+    position: relative;
+    margin-left: 0.5vw;
+    position: relative;
+}
+.header-div3 .cart-value {
+    width: 2.5vw;
+    height: 3vh;
+    text-align: center;
+    line-height: 3vh;
+    font-size: 0.8vw;
+    color: white;
+    background-color: rgb(246, 50, 50);
+    border-radius: 1.5vw;
+    position: absolute;
+    top: -3vh;
+    right: 1vw;
+}
+
+/* Toggle-bar with list items code here */
+.toggle-bar-list {
+    display: none;
+    width: 22vw;
+    font-size: 1.2vw;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255,1);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255,1);
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3), -2px -2px 3px 2px rgba(255, 255, 255, 0.3);
+    position: absolute;
+    z-index: 1;
+    top: 10vh;
+    right: 45vw;
+}
+.toggle-bar-list li{
+    margin: 2.5vh 2vw;
+    color: black;
+    font-weight: 600;
+    position: relative;
+}
+.toggle-bar-list span{
+    font-size: 1.5vw;
+    position: absolute;
+    right: 0;
+}
+.toggle-bar-list-sub{
+    width: 40vw;
+    font-size: 1vw;
+    list-style: none;
+    border: 1px solid rgba(255, 255, 255,1);
+    border-radius: 5px;
+    background-color: rgba(255, 255, 255,1);
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3), -2px -2px 3px 2px rgba(255, 255, 255, 0.3);
+    position: absolute;
+    top: -2.5vh;
+    left: 20vw;
+    display: none;
+}
+.toggle-bar-list-sub li:first-of-type{
+    font-weight: 600;
+}
+.toggle-bar-list-sub li{
+    font-weight: lighter;
+}
+.toggle-bar-list-sub img{
+    margin-top: 1vh;
+    width: 10vw;
+    height: 15vh;
+    border-radius: 5px;
+}
+.toggle-bar-list-sub img:first-of-type{
+    margin-top: 2.5vh;
+}
+
+.toggle-bar-list>li:hover{
+    color: white;
+    padding: 0.5vw;
+    background-color: blue;
+    border: 1px solid rgba(0, 0, 255,0.5);
+    border-radius: 5px;
+}
+.toggle-bar-list li:hover .toggle-bar-list-sub{
+    display: block;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+/* Profile icon with list of items here */
+.profile-list{
+    display: none;
+    width: 11vw;
+    height: 20vh;
+    border: 1px solid rgba(255, 255, 255,1);
+    border-radius: 5px;
+    padding: 0.5vw;
+    margin: 1px;
+    background-color: rgba(255, 255, 255,1);
+    box-shadow: 2px 2px 3px 1px rgba(0, 0, 0, 0.3), -2px -2px 3px 2px rgba(255, 255, 255, 0.3);
+    z-index: 1;
+    position: absolute;
+    top: 10vh;
+}
+.profile-list li{
+    height: 4vh;
+    font-size: 1.2vw;
+    margin-bottom: 0.5vh;
+}
+.profile-list li>a{
+    color: black;
+}
+.profile-list li:hover{
+    line-height: 2vh;
+    padding-top: 0.6vh;
+    background-color: blue;
+    border: 1px solid rgba(0, 0, 255,0.5);
+    border-radius: 5px;
+}
+.profile-list li>a:hover{
+    color: white;
+}
+/* Add to cart icon with list of items here */
+
+
+/* ------------------------------------------ Banner of our website ------------------------------------------ */
+:root {
+    --banner-image: url('../Assets/banner-1.jpg');
+}
+.banner {
+    margin-top: -2vh;
+    height: calc(75vw * 9 / 16);
+    background-image: var(--banner-image);
+    background-position:calc(100vw * 9 / 200%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    animation:Slider 15s ease-in-out infinite;
+    transition:background-image 1s ease-in-out;
+}
+.banner-div p{
+    width: 20vw;
+    height: 22vh;
+    background-color: rgba(255, 255, 255,0.6);
+    font-size: 2vw;
+    padding: 15px;
+}
+.banner-div span{
+    width: 2vw;
+    height: 3vh;
+    font-size: 1.3vw;
+    color: blue;
+}
+.banner-next,.banner-prev{
+    padding: 0.3vw;
+    font-size: 2vw;
+    color:rgba(255, 255, 255,1);
+    background-color: rgb(178, 34, 34,1);
+    border-radius: 0.5vw;
+    position:absolute;
+    top: calc(8vw * 9 / 4);
+}
+/* .banner-prev{
+    transform: rotate(270deg);
+} */
+.banner-next{
+    left: calc(42.3vw * 9 / 4);
+    /* transform: rotate(90deg); */
+}
+.banner .banner-div{
+    position: absolute;
+    top: calc(6.5vw * 9 / 4);
+    left: calc(2vw * 9 / 4);
+}
+.banner-carousel{
+    position:absolute;
+    top: calc(17.5vw * 9 / 4);
+    left: calc(20vw * 9 / 4);
+}
+.input-radio{
+    width: 3vw;
+    height: 2.5vh;
+}
+
+@keyframes Slider{
+    0%{
+        --banner-image: url('../Assets/banner-1.jpg');
+        
+    }
+    33%{
+        --banner-image: url('../Assets/banner-2.jpg');
+        
+    }
+    66%{
+        --banner-image: url('../Assets/banner-3.jpg');
+    }
+}
+
+/* --------------------------------------Main section here ---------------------------------------------------------------------- */
+
+/* ------------------------------------- Section3 Icons --------------------------------------------------- */
+.section3{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 2vh;
+    margin-left: 1vw;
+    background-color: rgba(244, 244, 244,0.6);
+}
+.section3-div{
+    width: 27vw;
+    height: 34vh;
+    border: 1px solid rgba(244, 244, 244,0.6);
+    text-align: center;
+    padding: 3vw;
+}
+.section3-div i{
+    color: darkblue;
+   font-size: 2.5vw;
+   margin: 2vh 0 0 0;
+}
+.section3-div h3{
+    font-size: 1.7vw;
+}
+.section3-div:first-of-type{
+    margin: 0 0 0 4vw;
+}
+.section3-div:last-of-type{
+    margin: 0 4vw 0 0;
+}
+.section3-div p{
+    margin: 2.5vh 0 0 0;
+}
+.section3-div p:firstst-of-type{
+    font-size: 1.5vw;
+    text-align: center;
+}
+.section3-div p:last-of-type{
+    font-size: 1vw;
+    font-weight:600;
+    color: rgba(131, 3, 252, 1);
+}
+
+/* ---------------------------------------------------Section-4 Watches -------------------------------------- */
+.section4{
+    width: 65vw;
+    height: calc(14vw*9/4);
+    border: 1px solid red;
+    height: 60vh;
+    margin: 4vh 15vw;
+    border: 1px solid rgba(244, 244, 244,0.1);
+}
+.section4-div{
+    float: left;
+    width: 30vw;
+    height: calc(12vw*9/4);
+    background-color: rgba(244, 244, 244,0.6);
+    border: 1px solid rgba(244, 244, 244,0.6);
+    margin: 1vw;
+    position: relative;
+}
+.section4-div img{
+    margin: 2vh 0 0 5vw;
+    width:20vw;
+    height: calc(11vw*9/4);
+}
+.section4-div div{
+    width: 12vw;
+    height: 13vh;
+    padding: 0.5vh 2vw;
+    background-color: rgba(0, 0, 0,0.7);
+    border: 1px solid rgba(0, 0, 0,0.7);
+    position: absolute;
+    top:calc(9vw*9/4);
+    margin-left: 5vw;
+    
+}
+.section4-div div>p:first-of-type{
+    font-size: 1.3vw;
+    color: white;
+}
+.section4-div div>p:last-of-type{
+    font-size: 0.8vw;
+    color: silver;
+    text-align: center;
+    margin-top: 0.3vh;
+}
+.section4-div i{
+    width: 6vw;
+    height: 4vh;
+    text-align: center;
+    line-height: 4vh;
+    color: rgba(255, 255, 255,0.8);
+    margin: 1vh 0 0 1.5vw;
+    border: 1px solid rgba(255, 1, 85,1);
+    border-radius: 5px;
+    background-color: rgba(255, 1, 85,1);
+}
+.section4-div i>span{
+    color: white;
+}
+
+/* ---------------------------------------------Section-5 Oculus Banner--------------------------------------- */
+.section5{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background-color: rgba(192, 192, 192,0.3);
+    height: 60vh;
+}
+.section5 div>img{
+    width: 46vw;
+    height: 58vh;
+    margin-top:2vh;
+}
+.section5 div:last-of-type{
+    width: 35vw;
+    margin-top: 10vh;
+}
+.section5 div>p:first-of-type{
+    font-size: 2vw;
+}
+.section5 div>p:nth-child(2){
+    font-size: 3.8vw;
+    margin-top: 1vh;
+
+}
+.section5 div>p:last-of-type{
+    color: rgba(0, 0, 0,0.7);
+    font-size: 1.8vw;
+    margin-top: 1vh;
+}
+
+/* ---------------------------------------------Section-6 Oculus Quest's--------------------------------------- */
+/* .section6{
+    width: 80vw;
+    margin:4vh 10vw 0;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.section6-div{
+    width: 25.5vw;
+    height: 55vh;
+    margin: 0.5vw;
+    padding: 0.2vw;
+}
+.section6-div:hover{
+    background-color: rgba(110, 58, 162,0.3);
+    z-index: 1;
+}
+.section6-div>img{
+    width: 25.15vw;
+    height: 36vh;
+}
+.section6-div div:last-of-type{
+    width: 25vw;
+    height: 17.5vh;
+    padding:1vh 2vw;
+    background-color: rgba(192, 192, 192,0.15);
+}
+.section6-div div>p:first-of-type{
+    font-size: 1.8vw;
+}
+.section6-div div>p:nth-child(2){
+    margin-top: 1vh;
+    color:rgba(55, 55, 55,1);
+    font-size: 1vw;
+}
+.section6-div div>p:last-of-type{
+    margin-top: 1.5vh;
+    font-size: 1.3vw;
+}
+.section6-div div>p:last-of-type>i{
+    color: rgba(255, 1, 85,1);
+}
+.section6-div div>p span{
+    width: 10vw;
+    height: 4.5vh;
+    color: white;
+    float: right;
+    text-align: center;
+    line-height: 4.5vh;
+    background-color: rgb(132, 0, 255);
+    border-radius: 5px;
+    margin-top: -1.2vh;
+    font-size: 1.5vw;
+} */
+/*vrbox-section*/
+/* .vrbox-section{
+    margin: 7vh 2vw;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    background-color: #eaeded;
+}
+.vr-box{
+    width: 100%;
+}
+.vr-box img{
+    width: 100%;
+}
+.vr-box-content{
+    width: 27vw;
+    height: 38vh;
+    padding: 2vh 2vw;
+    margin: 18vh 1vw;
+}
+.vr-box-content h2{
+    font-size: 5vh;
+    font-weight: bold;
+}
+.vr-box-content p{
+    font-size: 2.3vh;
+    text-align: justify;
+} */
+/*vr box section*/
+.quest-products{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    margin-left: 12vw;
+
+}
+.product1{
+    width: 22vw;
+    height: 52vh;
+    background-color: #eaeded;
+
+}
+.product-img{
+    width: 22vw;
+    height: 32vh;
+   
+
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-price{
+    width: 100%;
+    /* height:; */
+
+}
+.product-price h3{
+    margin:2vh 1vw;
+}
+.product-price p{
+    margin-left: 1vw;
+    font-size: 1.8vh;
+    color: grey;
+}
+.product-price h4{
+    display: inline;
+    margin-left: 1vw;
+    color: red;
+    font-size: 2.5vh;
+}
+.product-price button{
+    display: inline;
+    font-size: 1.9vh;
+    font-weight: bold;
+    margin-left: 5vw;
+    background-color: rgb(121, 12, 222);
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 0.8vh;
+}
+.product-price button i{
+    padding: 0.3vh 0.3vw;
+}
+/* ---------------------------------------------Section-7 Prime-Ambassador--------------------------------------- */
+/* :root {
+    --banner-image2: url('../Assets/content-4.jpg');
+} */
+.section7 {
+    width: 100%;
+    height: calc(75vw * 9 / 16);
+    background-image: url('../Assets/content-4.jpg');
+    background-position:calc(100vw * 9 / 200%);
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    margin-top: 5vh;
+}
+.section7-div{
+    width: 18vw;
+    height: 18vh;
+    color: white;
+    top: calc(7vw * 9 / 4);
+    left: calc(18vw * 9 / 4);
+    position: absolute;
+    background-color: rgba(0, 0, 0,0.4);
+    text-align: center;
+}
+.section7-div p{
+    margin-top: 1.5vh;
+    font-size: 2vw;
+}
+.section7-div p>span{
+    margin-top: 1.5vh;
+    font-size: 0.8vw;
+    color: rgba(74, 127, 225,1);
+}
+
+/* ---------------------------------------------Section-8 Stater Plan--------------------------------------- */
+/* .section8{
+    width: 80vw;
+    height: 60vh;
+    display: grid;
+    margin: 7vh 10vw 0;
+    grid-template-columns: repeat(3,1fr);
+}
+.section8-div{
+    width: 25.5vw;
+    height: 57.5vh;
+    margin: 0.5vw;
+    padding: 1.5vw;
+    position: relative;
+    border: 1px solid white;
+    border-radius: 7px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3), -3px -3px 5px 3px rgba(255, 255, 255, 0.3);
+}
+.section8-div1 span:first-of-type{
+    font-size: 1.5vw;
+    color: rgba(0, 0, 0,0.7);
+}
+.section8-div1 i{
+    top: 3vh;
+    left: 20.5vw;
+    position: absolute;
+    font-size: 1.5vw;
+}
+.section8-div1 span:last-of-type{
+    font-size: 1.3vw;
+    color: rgb(88, 86, 86);
+    position: absolute;
+    top: 6.5vh;
+    left: 20vw;
+}
+.section8-div img{
+    margin: 3vh 6vw;
+    width: 10vw;
+    height: 22vh;
+}
+.section8-div2 p{
+    color: slategray;
+    margin-top: 1vh;
+}
+.section8-div2 p:last-of-type{
+    width: 22.5vw;
+    height: 4vh;
+    color: white;
+    text-align: center;
+    line-height: 4vh;
+    border-radius: 5px;
+    background-color: rgb(132, 0, 255);
+} */
+.plans{
+    margin-top: 10vh;
+    margin-bottom: 4vh;
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+.plan{
+    border-radius: 1vh;
+    width:21vw;
+    height: 56vh;
+    background-color:rgb(245, 245, 245) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.plan-image{
+    width: 6vw;
+    height: 15vh;
+    margin: -0.9vh 6vw;
+}
+.plan-image img{
+    width: 100%;
+    height: 100%;
+}
+.plan-price{
+    display: flex;
+    justify-content: space-between;
+}
+.plan-price>p{
+    font-size: 2.5vh;
+    padding: 2vh 1vw;
+}
+.plan-price h1{
+  font-size: 4vh;
+  /* padding-top: 1vh; */
+  margin-top: 1vh;
+  padding-right: 1vw;
+} 
+.plan-price>div>p{
+    margin-top: -1vh;
+    font-size: 2vh;
+}
+.plan-content label{
+    margin-top: 1vh ;
+    font-size: 1.9vh;
+}
+.plan-content input{
+    margin-top: 1.5vh;
+    margin-left: 0.5vw;
+    width: 2vw;
+    height: 2vh;
+}
+.plan-content{
+    padding: 3.8vh 1vw;
+}
+.plan button{
+    width: 18vw;
+    height: 5vh;
+    background-color: rgb(174, 8, 230);
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    border: none;
+    margin-left: 1.5vw;
+    margin-top: -1vh;
+    border-radius: 1vh;
+}
+
+/* ---------------------------------------------Section-9 About Oculus VR--------------------------------------- */
+.section9{
+    height: 165vh;
+    margin-top: 5vh;
+    border: 1px solid white;
+    background-color: rgba(80, 80, 80, 0.05);
+}
+.section9-div1{
+    margin-top: 5vh;
+    text-align: center;
+}
+.section9-div1>p:first-of-type{
+    font-size: 0.7vw;
+    color: rgba(0, 0, 0,0.6);
+}
+.section9-div1>p:last-of-type{
+    font-size: 2vw;
+}
+.section9-div2 img{
+    width: 85vw;
+    height: 65vh;
+    margin:5vh 6.8vw;
+}
+.section9-div3{
+    width: 35vw;
+    height: 15vh;
+    padding: 1vh 1.4vw;
+    margin: 0 30vw;
+    border: 1px solid rgba(0, 128, 0,0);
+}
+.section9-div3 img{
+    width: 6vw;
+    height: 12vh;
+}
+.section9-div4{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.section9-sub-div1{
+    border: 1px solid rgba(80, 80, 80, 0.01);
+    width: 40%;
+    height: 55vh;
+    margin-top: 3vh;
+    padding: 1.5vw;
+}
+.section9-sub-div1 p:first-of-type{
+    font-size: 1vw;
+    color: rgba(0, 0, 0,0.6);
+}
+.section9-sub-div1 p:nth-child(2){
+    font-size: 2vw;
+    margin-top: 0.3vh;
+}
+.section9-sub-div1 p:last-of-type{
+    font-size: 1vw;
+    margin-top: 1vh;
+}
+.section9-sub-div1 img{
+    width: 10vw;
+    height: 17vh;
+    margin-top: 1vh;
+    border: 1px solid rgba(192, 192, 192,0.2);
+    border-radius: 5px;
+}
+.section9-sub-div2{
+    border: 1px solid rgba(80, 80, 80, 0.01);
+    width: 40%;
+    height: 55vh;
+    margin-top: 3vh;
+    padding: 1.5vw;
+}
+.section9-sub-div2>span:first-of-type{
+    margin-top: 2vh;
+    font-weight: 900;
+    font-size: 1.5vw;
+}
+.section9-sub-div2>span:last-of-type{
+    color: rgb(135, 135, 135);
+    font-size: 1.2vw;
+    font-weight: 900;
+    text-decoration: line-through;
+}
+.section9-sub-div2 div>i:first-of-type{
+    width: 10vw;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    background-color: rgb(132, 0, 255);
+    border-radius: 5px;
+    font-size: 1vw;
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+.section9-sub-div2 div>i:last-of-type{
+    width: 8vw;
+    height: 5vh;
+    color: white;
+    text-align: center;
+    line-height: 5vh;
+    background-color: rgba(255, 1, 85,1);
+    border-radius: 5px;
+    font-size: 1vw;
+    border: 1px solid black;
+    margin-top: 2vh;
+}
+.section9-selects-items{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin-right: 7vw;
+}
+.section9-selects-items-sub1{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+#color1{
+    width: 2vw;
+    height: 4vh;
+    font-size: 1vw;
+    border-radius: 100%;
+    background-color: rgba(255, 255, 255,1);
+    display: block;
+    margin-top: 1vh;
+}
+#color2{
+    width: 2vw;
+    height: 4vh;
+    font-size: 1vw;
+    border-radius: 100%;
+    background-color: pink;
+    display: block;
+    margin-top: 1vh;
+}
+#color3{
+    width: 2vw;
+    height: 4vh;
+    font-size: 1vw;
+    border-radius: 100%;
+    background-color: rgba(0, 0, 0,0.8);
+    display: block;
+    margin-top: 1vh;
+}
+#color-output{
+    font-weight: 900;
+    font-size: 1vw;
+    color: black;
+}
+#Gb{
+    margin-top: 1vh;
+    width: 5vw;
+    height: 3.5vh;
+    border: 1px solid rgba(192, 192, 192,0.5);
+    border-radius: 4px;
+}
+.section9-selects-items-sub3{
+    display: flex;
+    justify-content: space-between;
+    width: 6vw;
+    height: 3.5vh;
+    border: 1px solid rgba(192, 192, 192,0.5);
+    margin: 1vh;
+}
+#minus{
+    font-size: 2vw;
+    margin-top: -1vh;
+}
+#value{
+    font-size: 1.2vw;
+    margin-top: 0.2vh;
+}
+#plus{
+    font-size: 1.5vw;
+    margin-top: -0.2vh;
+}
+.country p{
+    color: red;
+    font-size: 2vw;
+    margin-top: 2vh;
+}
+.country select{
+    margin-top: 2vh;
+    height: 3vh;
+    border: 1px solid rgba(192, 192, 192,0.5);
+}
+
+/* ---------------------------------------------Section-10 Haritage 1921 Watch--------------------------------------- */
+.section10{
+    width: 70vw;
+    height: 60vh;
+    margin: 5vh 15vw 0;
+    border: 1px solid rgba(0, 0, 0,0.01);
+}
+.section10-div{
+    float: left;
+    width: 22vw;
+    height: 55vh;
+    margin: 0.5vw;
+    text-align: center;
+    border: 1px solid white;
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3), -3px -3px 5px 3px rgba(255, 255, 255, 0.3);
+}
+.section10-div div>p:first-of-type{
+    font-size: 1.5vw;
+    font-weight: 900;
+    margin-top: 1vw;
+}
+.section10-div div>p:nth-of-type(2){
+    font-size: 1vw;
+    margin-top: 0.2vw;
+}
+.section10-div div>p:last-of-type{
+    font-size: 1vw;
+    font-weight: 900;
+    margin-top: 1vw;
+    color: blueviolet;
+}
+.section10-div div>p:last-of-type>i{
+    font-size: 0.8vw;
+}
+.section10-div img{
+    margin-top: 5vh;
+    width: 21vw;
+    height: 38vh;
+}
+
+/* ---------------------------------------Section-11 Small boxes----------------------------------- */
+.section11{
+    margin: 3vh 15.5vw;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.section11-div{
+    width: 16vw;
+    height: 22vh;
+    border: 1px solid rgba(0, 0, 0,0.01);
+    border-radius: 5px;
+    box-shadow: 3px 3px 5px 1px rgba(0, 0, 0, 0.3), -3px -3px 5px 3px rgba(255, 255, 255, 0.3);
+    text-align: center;
+}
+.section11-div i{
+    width: 4vw;
+    height: 8vh;
+    color: rgba(255, 255, 255,1);
+    line-height: 8vh;
+    font-size: 1.7vw;
+    border-radius: 50%;
+    background-color: blueviolet;
+    margin-top: 2vh;
+}
+.section11-div p:first-of-type{
+    margin: 1vh;
+    font-size: 2vw;
+    font-weight: 900;
+}
+.section11-div p:last-of-type{
+    margin: 1vh;
+    font-size: 1.2vw;
+    font-weight: 900;
+}
+
+/* ---------------------------------------Footer of our Webpage----------------------------------- */
+footer{
+    height: 80vh;
+    margin-top: 8vh;
+    background-color: rgba(80, 80, 80, 0.05);
+}
+.footer-div1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 4vw 16vw 4vh 20vw;
+    position: relative;
+}
+.footer-div1 p:first-of-type{
+    font-size: 1.5vw;
+    font-weight: 600;
+}
+.footer-div1 p:last-of-type{
+    font-size: 1vw;
+    margin-top: 1vh;
+}
+.footer-div1 label{
+    margin-bottom: 5vh;
+    font-size: 1vw;
+}
+.footer-div1 input{
+    width: 20vw;
+    height: 4vh;
+    margin-top: 1vh;
+    border-radius: 5px;
+    border: none;
+    background-color: rgba(162, 162, 162,0.3);
+}
+.footer-div1 i:first-of-type{
+    position: absolute;
+    left: 32vw;
+    top: 4.2vh;
+    color: rgba(162, 162, 162,1);
+}
+.footer-div1 i:last-of-type{
+    width: 2vw;
+    height: 4vh;
+    color: white;
+    margin:0 0 0 -2vw;
+    line-height: 4vh;
+    text-align: center;
+    border-radius: 5px;
+    background-color: blueviolet;
+}
+.footer-div2{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin: 4vh 5vw 2vh 18vw;
+}
+.footer-div2 i{
+    color: blueviolet;
+    margin-left: 0.5vw;
+}
+.Payemts-options{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+}
+.Payemts-options img{
+    width: 15vw;
+    margin-left: -13.5vw;
+}
+.footer-div3{
+    margin: 3vh 15.5vw;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+}
+.footer-div3-sub{
+    width: 16vw;
+    height: 30vh;
+    border: 1px solid rgba(0, 0, 0,0.01);
+}
+.footer-div3-sub li:first-of-type{
+    font-size: 1.4vw;
+    color: rgba(0, 0, 0,0.75);
+    margin-bottom: 2vh;
+}
+.footer-div3-sub li{
+    margin: 1vh 0 0 5vw;
+    font-size: 1.1vw;
+
+}
+.footer-div3-sub li>a{
+    color: rgba(0, 0, 0,0.85);
+    font-weight: 600;
+}
+#copy-right{
+    text-align: center;
+    font-size: 1.1vw;
+    margin-top: 5vh;
+    color: rgba(48, 48, 48,1);
+}
+#footer-hr1{
+   border: none;
+}
+.footer-hr2{
+    border: 0.6px solid rgba(80, 80, 80, 0.05);
+}
+
+
+/* -------------------------------------Media Query between 360px and 480px----------------------------------------- */
+@media only screen and (max-width:480px){
+
+    /* ----------------------Header Part------------------------------------ */
+    header{
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .header-div2{
+        width:90vw;
+        position: relative;
+        position: absolute;
+        top: 6vh;
+        left: -8vw;
+    }
+    .header-div2 select{
+        width: 15vw;
+    }
+    .header-div2 input{
+        width: 70vw;
+        margin-left: -1.6vw;
+    }
+    .header-div2 i:last-of-type{
+        width:9vw;
+        margin-left: -10.5vw;
+    }
+    .header-div3{
+        position: absolute;
+        top: -0.5vh;
+        left: 45vw;
+    }
+    .header-div3 i{
+        font-size: 5vw;
+        margin-left: 7vw;
+    }
+    .header-div3 .cart-value{
+        width: 10vw;
+        height: 3.5vh;
+        line-height: 3.5vh;
+        font-size: 3.5vw;
+        border-radius: 3.5vw;
+        top: -3.3vh;
+        right: -7vw;
+    }
+    #toggle-bar{
+        font-size: 5.5vw;
+        position: absolute;
+        top: -5.3vh;
+        left: 4vw;
+    }
+    .header-div1 img{
+        width: 30vw;
+        height: 8vh;
+        margin:0 0 0 3vw;
+    }
+    .toggle-bar-list{
+        width: 58vw;
+        font-size: 4vw;
+        top: -1vh;
+        right: 30vw;
+    }
+    .toggle-bar-list span{
+        font-size: 4vw;
+    }
+    .toggle-bar-list-sub{
+        z-index: 2;
+        width: 55vw;
+        font-size: 4vw;
+    }
+    .toggle-bar-list-sub img{
+        width: 40vw;
+    }
+    .profile-list{
+        width: 42vw;
+        height: 20vh;
+        padding-top: 1.5vh;
+        top: 4vh;
+        right: 1vw;
+    }
+    .profile-list li{
+        font-size: 4.5vw;
+    }
+    .profile-list i{
+        font-size: 4.5vw;
+        margin-right: 4vw;
+        margin-left: 2vw;
+    }
+
+    /* --------------------------------Banner part------------------------------------- */
+    .banner{
+        top: 6vh;
+        height: calc(100vw*9 / 16);
+        margin-left: 2vw;
+    }
+    .banner-div p{
+        width: 40vw;
+        height: calc(9.5vw*9 / 4);
+        font-size: 4vw;
+        padding: 2vw;
+    }
+    .banner-div p span{
+        font-size: 3vw;
+    }
+    .banner-next,.banner-prev{
+        font-size: 4vw;
+        top: calc(11vw*9/4);
+    }
+    .banner-next{
+        left: calc(41vw*9/4);
+    }
+    .banner-carousel{
+        top: calc(22vw*9/4);
+    }
+    .input-radio{
+        width: 5vw;
+    }
+
+    /* -------------------------------- Section-3 Icons part------------------------------------- */
+    .section3{
+        margin-top: 7vh;
+        flex-direction: column;
+    }
+    .section3-div:first-of-type{
+        margin: 0 15vw 0;
+    }
+    .section3-div:last-of-type{
+        margin: 2vh 15vw;
+    }
+    .section3-div{
+        margin: 2vh 15vw 0;
+        width: 70vw;
+        height: 25vh;
+    }
+    .section3-div i{
+        font-size: 6vw;
+    }
+    .section3-div h3{
+        font-size: 4vw;
+    }
+    .section3-div p:last-of-type{
+        font-size: 3vw;
+    }
+
+    /* -------------------------------- Section-4 Watches------------------------------------- */
+    .section4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        height: calc(80vw*9/4);
+        margin: 0 10vw 0 15vw;
+    }
+
+    .section4-div{
+        float: none;
+        width: 75vw;
+        height: calc(35vw*9/4);
+        margin: 3vh 0 0;
+    }
+    .section4-div img{
+        width: 60vw;
+        height: calc(30vw*9/4);
+        margin-left: 10vw;
+    }
+    .section4-div div{
+        width: 35vw;
+        height: 12vh;
+        top: calc(20vw*9/4);
+    }
+    .section4-div div>p:first-of-type{
+        font-size: 5vw;
+    }
+    .section4-div div>p:last-of-type{
+        font-size: 3vw;
+    }
+    .section4-div i{
+        width: 25vw;
+    }
+
+
+
+    /* -------------------------------- Section-5 Watches------------------------------------- */
+    /* .section5{
+        margin-top: 55vh;
+    } */
+    .section5{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        background-color: rgba(192, 192, 192,0.3);
+        height: 60vh;
+    }
+    .section5 div>img{
+        width: 46vw;
+        height: 58vh;
+        margin-top:2vh;
+    }
+    .section5 div:last-of-type{
+        width: 35vw;
+        margin-top: 10vh;
+    }
+    .section5 div>p:first-of-type{
+        font-size: 3vw;
+    }
+    .section5 div>p:nth-child(2){
+        font-size: 4vw;
+        margin-top: 1vh;
+    
+    }
+    .section5 div>p:last-of-type{
+        color: rgba(0, 0, 0,0.7);
+        font-size: 3vw;
+        margin-top: 1vh;
+    }
+     /* -------------------------------- Section-6 Watches------------------------------------- */
+     .quest-products{
+        display: grid;
+        grid-template-columns:repeat(1,1fr);
+        margin-left: 20vw;
+        row-gap: 3vh;
+    
+    }
+    .product1{
+        width: 50vw;
+        height: 52vh;
+        background-color: #eaeded;
+    
+    }
+    .product-img{
+        width: 50vw;
+        height: 32vh;
+       
+    
+    }
+    .product-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .product-price{
+        width: 100%;
+        /* height:; */
+    
+    }
+    .product-price h3{
+        margin:2vh 1vw;
+    }
+    .product-price p{
+        margin-left: 1vw;
+        font-size: 1.8vh;
+        color: grey;
+    }
+    .product-price h4{
+        display: inline;
+        margin-left: 1vw;
+        color: red;
+        font-size: 2.5vh;
+    }
+    .product-price button{
+        display: inline;
+        font-size: 1.9vh;
+        font-weight: bold;
+        margin-left: 5vw;
+        background-color: rgb(121, 12, 222);
+        color: white;
+        border: none;
+        padding: 1vh 1vw;
+        border-radius: 0.8vh;
+    }
+    .product-price button i{
+        padding: 0.3vh 0.3vw;
+    }
+    /*...................................section-7...................................................*/
+    
+        .section7 {
+        background-image: url('../Assets/content-4.jpg');
+        width: 100%;
+        height: calc(75vw * 9 / 16);
+        background-position:calc(100vw * 9 / 200%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 5vh;
+    }
+        .section7-div{
+        width: 20vw;
+        height: 10vh;
+        color: white;
+        top: calc(7vw * 9 / 4);
+        left: calc(18vw * 9 / 4);
+        position: absolute;
+        background-color: rgba(0, 0, 0,0.4);
+        text-align: center;
+    }
+    .section7-div p{
+        margin-top: 1.5vh;
+        font-size: 2.2vw;
+    }
+    .section7-div p>span{
+        margin-top: 1.5vh;
+        font-size: 1.9vw;
+        color: rgba(74, 127, 225,1);
+    }   
+    /*...................................................section-8..........................................*/
+    .plans{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        gap: 5vw;
+        margin-left: 8vw;
+    }
+    .plan{
+        border-radius: 1vh;
+        width:80vw;
+        height: 56vh;
+        background-color:rgb(245, 245, 245) ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .plan-image{
+        width: 22vw;
+        height: 15vh;
+        margin: -0.9vh 20vw;
+    }
+    .plan-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .plan-price{
+        display: flex;
+        justify-content: space-between;
+    }
+    .plan-price>p{
+        font-size: 2.5vh;
+        padding: 2vh 1vw;
+    }
+    .plan-price h1{
+      font-size: 4vh;
+      /* padding-top: 1vh; */
+      margin-top: 1vh;
+      padding-right: 1vw;
+    } 
+    .plan-price>div>p{
+        margin-top: -1vh;
+        font-size: 2vh;
+    }
+    .plan-content label{
+        margin-top: 1vh ;
+        font-size: 2.3vh;
+    }
+    .plan-content input{
+        margin-top: 1.5vh;
+        margin-left: 0.5vw;
+        width: 2vw;
+        height: 2vh;
+    }
+    .plan-content{
+        padding: 3.8vh 1vw;
+    }
+    .plan button{
+        width: 76vw;
+        height: 5vh;
+        background-color: rgb(174, 8, 230);
+        color: white;
+        font-size: 2vh;
+        font-weight: bold;
+        border: none;
+        margin-left: 1.5vw;
+        margin-top: -1vh;
+        border-radius: 1vh;
+    } 
+    
+
+}
+
+/* -------------------------------------Media Query between 481px and 768px----------------------------------------- */
+
+@media only screen and (min-width:481px) and (max-width:768px){
+
+    /* ----------------------Header Part------------------------------------ */
+    header{
+        margin-top: 3vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .header-div2{
+        width:90vw;
+        position: relative;
+        position: absolute;
+        top: 6vh;
+        left: -8vw;
+    }
+    .header-div2 select{
+        width: 15vw;
+    }
+    .header-div2 input{
+        width: 70vw;
+        margin-left: -1.7vw;
+    }
+    .header-div2 i:last-of-type{
+        width:5.5vw;
+        margin-left: -7vw;
+    }
+    .header-div3{
+        position: absolute;
+        top: -0.5vh;
+        left: 48vw;
+    }
+    .header-div3 i{
+        font-size: 3vw;
+        margin-left: 7vw;
+    }
+    .header-div3 .cart-value{
+        width: 6vw;
+        height: 3vh;
+        line-height: 3vh;
+        font-size: 2vw;
+        border-radius: 3vw;
+        top: -3.3vh;
+        right: -3vw;
+    }
+    #toggle-bar{
+        font-size: 4.5vw;
+        position: absolute;
+        top: -5.7vh;
+        left: 4vw;
+    }
+    .header-div1 img{
+        width: 30vw;
+        height: 8vh;
+        margin:0.2vh 0 0 3vw;
+    }
+    .toggle-bar-list{
+        width: 40vw;
+        font-size: 2.5vw;
+        top: -1vh;
+        right: 50vw;
+    }
+    .toggle-bar-list span{
+        font-size: 3vw;
+    }
+    .toggle-bar-list-sub{
+        z-index: 2;
+        width: 65vw;
+        font-size: 2.8vw;
+    }
+    .toggle-bar-list-sub img{
+        width: 15vw;
+        height: 20vh;
+    }
+    .profile-list{
+        width: 25vw;
+        height: 23vh;
+        padding-top: 3vh;
+        top: 4vh;
+        right: 8vw;
+    }
+    .profile-list li{
+        font-size: 2.5vw;
+    }
+    .profile-list i{
+        font-size: 2.5vw;
+        margin-right: 2vw;
+        margin-left: 3vw;
+    }
+
+    /* --------------------------------Banner part------------------------------------- */
+    .banner{
+        top: 6vh;
+        height: calc(100vw*9 / 16);
+        margin-left: 2vw;
+    }
+    .banner-div p{
+        width: 35vw;
+        height: calc(9.5vw*9 / 4);
+        font-size: 3.6vw;
+        padding: 1vw;
+    }
+    .banner-div p span{
+        font-size: 2.5vw;
+    }
+    .banner-next,.banner-prev{
+        font-size: 3.4vw;
+        top: calc(11vw*9/4);
+    }
+    .banner-next{
+        left: calc(41.3vw*9/4);
+    }
+    .banner-carousel{
+        top: calc(22.5vw*9/4);
+    }
+
+    /* -------------------------------section-3 Icon part--------------------------------------- */
+    .section3{
+        margin-top: 7vh;
+        flex-direction: row;
+        height: calc(35vw*9/4);
+    }
+    .section3-div:first-of-type{
+        margin: 0 0 0 10vw;
+    }
+    .section3-div:last-of-type{
+        margin-top: -5vh;
+        width: 45vw;
+    }
+    .section3-div:nth-child(2){
+        margin: 0 10vw 0 0;
+    }
+    .section3-div{
+        width: 40vw;
+        height: 10vh;
+    }
+    .section3-div i{
+        font-size: 6vw;
+    }
+    .section3-div h3{
+        font-size: 4vw;
+    }
+    .section3-div p:first-of-type{
+        font-size: 3.5vw;
+    }
+    .section3-div p:last-of-type{
+        font-size: 2vw;
+    }
+
+    /* -------------------------------- Section-4 Watches------------------------------------- */
+    .section4{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-direction: column;
+        width: 80%;
+        height: calc(80vw*9/4);
+        margin: 0 10vw 0 13vw;
+    }
+
+    .section4-div{
+        float: none;
+        width: 75vw;
+        height: calc(35vw*9/4);
+        margin: 3vh 0 0;
+    }
+    .section4-div img{
+        width: 60vw;
+        height: calc(30vw*9/4);
+        margin-left: 10vw;
+    }
+    .section4-div div{
+        width: 35vw;
+        height: 13vh;
+        top: calc(24vw*9/4);
+    }
+    .section4-div div>p:first-of-type{
+        font-size: 5vw;
+    }
+    .section4-div div>p:last-of-type{
+        font-size: 3vw;
+    }
+    .section4-div i{
+        width: 25vw;
+    }
+    /*......................................section-5..............................*/
+    /*..................................section6.................................*/
+    .quest-products{
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        margin-left: 18vw;
+    
+    }
+    .product1{
+        width: 58vw;
+        height: 58vh;
+        background-color: #eaeded;
+    
+    }
+    .product-img{
+        width: 58vw;
+        height: 38vh;
+       
+    
+    }
+    .product-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .product-price{
+        width: 100%;
+        /* height:; */
+    
+    }
+    .product-price h3{
+        margin:2vh 1vw;
+    }
+    .product-price p{
+        margin-left: 1vw;
+        font-size: 1.8vh;
+        color: grey;
+    }
+    .product-price h4{
+        display: inline;
+        margin-left: 1vw;
+        color: red;
+        font-size: 2.5vh;
+    }
+    .product-price button{
+        display: inline;
+        font-size: 1.9vh;
+        font-weight: bold;
+        margin-left: 5vw;
+        background-color: rgb(121, 12, 222);
+        color: white;
+        border: none;
+        padding: 1vh 1vw;
+        border-radius: 0.8vh;
+    }
+    .product-price button i{
+        padding: 0.3vh 0.3vw;
+    }
+    /*.....................................section-7..............................................*/
+  
+        .section7 {
+        background-image: url('../Assets/content-4.jpg');
+        width: 100%;
+        height: calc(75vw * 9 / 16);
+        background-position:calc(100vw * 9 / 200%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 5vh;
+    }
+    .section7-div{
+        position: absolute;
+        top: calc(7vw * 9 / 4);
+        left: calc(18vw * 9 / 4);
+        background-color: rgba(0, 0, 0,0.4);
+        width: 20vw;
+        height: 13vh;
+        color: white;
+        text-align: center;
+    }
+    .section7-div p{
+        margin-top: 1.5vh;
+        font-size: 2.2vw;
+    }
+    .section7-div p>span{
+        margin-top: 2.5vh;
+        font-size: 1.5vw;
+        color: rgba(74, 127, 225,1);
+    }
+    /*........................................section-8..............................................*/
+    .plans{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 4vw;
+    }
+    .plan{
+        border-radius: 1vh;
+        width:42vw;
+        height: 56vh;
+        background-color:rgb(245, 245, 245) ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .plan-image{
+        width: 10vw;
+        height: 15vh;
+        margin: -0.9vh 12vw;
+    }
+    .plan-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .plan-price{
+        display: flex;
+        justify-content: space-between;
+    }
+    .plan-price>p{
+        font-size: 2.5vh;
+        padding: 2vh 1vw;
+    }
+    .plan-price h1{
+      font-size: 4vh;
+      /* padding-top: 1vh; */
+      margin-top: 1vh;
+      padding-right: 1vw;
+    } 
+    .plan-price>div>p{
+        margin-top: -1vh;
+        font-size: 2vh;
+    }
+    .plan-content label{
+        margin-top: 1vh ;
+        font-size: 1.9vh;
+    }
+    .plan-content input{
+        margin-top: 1.5vh;
+        margin-left: 0.5vw;
+        width: 2vw;
+        height: 2vh;
+    }
+    .plan-content{
+        padding: 3.8vh 1vw;
+    }
+    .plan button{
+        width: 38vw;
+        height: 5vh;
+        background-color: rgb(174, 8, 230);
+        color: white;
+        font-size: 2vh;
+        font-weight: bold;
+        border: none;
+        margin-left: 1.5vw;
+        margin-top: -1vh;
+        border-radius: 1vh;
+    }
+    
+    
+
+}
+
+
+/* -------------------------------------Media Query between 769px and 1024px----------------------------------------- */
+
+@media only screen and (min-width:769px) and (max-width:1024px){
+
+    /* ----------------------Header Part------------------------------------ */
+    header{
+        margin-top: 4vh;
+        display: flex;
+        flex-direction: column;
+        position: relative;
+    }
+    .header-div2{
+        width:90vw;
+        position: relative;
+        position: absolute;
+        top: 6vh;
+        left: -8vw;
+    }
+    .header-div2 select{
+        width: 15vw;
+    }
+    .header-div2 input{
+        width: 70vw;
+        margin-left: -1.7vw;
+    }
+    .header-div2 i:last-of-type{
+        width:4.5vw;
+        margin-left: -6vw;
+    }
+    .header-div3{
+        position: absolute;
+        top: -0.5vh;
+        left: 58vw;
+    }
+    .header-div3 i{
+        font-size: 2.5vw;
+        margin-left: 4vw;
+    }
+    .header-div3 .cart-value{
+        width: 5vw;
+        height: 4vh;
+        line-height: 4vh;
+        font-size: 1.5vw;
+        border-radius: 2vw;
+        top: -4vh;
+        right: -2.5vw;
+    }
+    #toggle-bar{
+        font-size: 3vw;
+        position: absolute;
+        top: -5.7vh;
+        left: 4vw;
+    }
+    .header-div1 img{
+        width: 25vw;
+        height: 8vh;
+        margin:0.2vh 0 0 3vw;
+    }
+    .toggle-bar-list{
+        width: 33vw;
+        font-size: 2vw;
+        top: -1vh;
+        right: 55vw;
+    }
+    .toggle-bar-list span{
+        font-size: 2vw;
+    }
+    .toggle-bar-list-sub{
+        width: 55vw;
+        font-size: 1.5vw;
+        left: 30.9vw;
+    }
+    .toggle-bar-list-sub img{
+        width: 15vw;
+    }
+    .profile-list{
+        width: 20vw;
+        height: 23vh;
+        top: 4vh;
+        right: 5vw;
+    }
+    .profile-list li{
+        font-size: 2vw;
+        height: 4.5vh;
+    }
+    .profile-list i{
+        font-size: 2.5vw;
+        margin-left: 2vw;
+    }
+
+    /* --------------------------------Banner part------------------------------------- */
+    .banner{
+        top: 6vh;
+        margin-left: 4vw;
+    }
+    .banner-div p{
+        width: 34vw;
+        height: 25vh;
+        font-size: 3.2vw;
+    }
+    .banner-div p span{
+        font-size: 2.2vw;
+    }
+    .banner-next,.banner-prev{
+        font-size: 3vw;
+        top: calc(9vw*9/4);
+    }
+    .banner-next{
+        left: calc(41.3vw*9/4);
+    }
+
+    /* -------------------------------section-3 Icon part--------------------------------------- */
+    .section3{
+        margin-top: 8vh;
+        margin-left: 0vw;
+        flex-direction: row;
+        height: calc(25vw*9/4);
+    }
+    .section3-div:first-of-type{
+        margin: 0 0 0 10vw;
+    }
+    .section3-div:last-of-type{
+        margin-top: -5vh;
+        width: 45vw;
+    }
+    .section3-div:nth-child(2){
+        margin: 0 10vw 0 0;
+    }
+    .section3-div{
+        width: 40vw;
+        height: 10vh;
+    }
+    .section3-div i{
+        font-size: 6vw;
+    }
+    .section3-div h3{
+        font-size: 3vw;
+    }
+    .section3-div p:first-of-type{
+        font-size: 2.5vw;
+    }
+    .section3-div p:last-of-type{
+        font-size: 1.6vw;
+    }
+
+    /* -------------------------------- Section-4 Watches------------------------------------- */
+    .section4{
+        /* border: 2px solid red; */
+        width: 85%;
+        height: calc(23vw*9/4);
+        margin: 3vh 0 0 10vw;
+    }
+
+    .section4-div{
+        width: 38vw;
+        height: calc(20vw*9/4);
+        margin-top: 3vh;
+        /* border: 2px solid black; */
+    }
+    .section4-div img{
+        width:30vw;
+        height: calc(16vw*9/4);
+        margin-left: 10vw;
+        margin-left: 4vw;
+    }
+    .section4-div div{
+        width: 18vw;
+        height: 13vh;
+        top: calc(13vw*9/4);
+    }
+    .section4-div div>p:first-of-type{
+        font-size: 2.2vw;
+    }
+    .section4-div div>p:last-of-type{
+        font-size: 1.4vw;
+    }
+    
+    .section4-div i{
+        width: 12vw;
+    }
+    /*...................................section5........................................*/
+    /*..................................section6.........................................*/
+    .quest-products{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        margin-left: 10vw;
+      }
+    .product1{
+        width: 38vw;
+        height: 52vh;
+        background-color: #eaeded;
+    
+    }
+    .product-img{
+        width: 38vw;
+        height: 32vh;
+       
+    
+    }
+    .product-img img{
+        width: 100%;
+        height: 100%;
+    }
+    .product-price{
+        width: 100%;
+        /* height:; */
+    
+    }
+    .product-price h3{
+        margin:2vh 1vw;
+    }
+    .product-price p{
+        margin-left: 1vw;
+        font-size: 1.8vh;
+        color: grey;
+    }
+    .product-price h4{
+        display: inline;
+        margin-left: 1vw;
+        color: red;
+        font-size: 2.5vh;
+    }
+    .product-price button{
+        display: inline;
+        font-size: 1.9vh;
+        font-weight: bold;
+        margin-left: 5vw;
+        background-color: rgb(121, 12, 222);
+        color: white;
+        border: none;
+        padding: 1vh 1vw;
+        border-radius: 0.8vh;
+    }
+    .product-price button i{
+        padding: 0.3vh 0.3vw;
+    }
+    .product3{
+        margin-left: 20vw;
+    }
+    /*.........................................section-7...........................................*/
+    .section7 {
+        background-image: url('../Assets/content-4.jpg');
+        width: 100%;
+        height: calc(75vw * 9 / 16);
+        background-position:calc(100vw * 9 / 200%);
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        margin-top: 5vh;
+    }
+    .section7-div{
+        width: 18vw;
+        height: 16vh;
+        color: white;
+        top: calc(7vw * 9 / 4);
+        left: calc(18vw * 9 / 4);
+        position: absolute;
+        background-color: rgba(0, 0, 0,0.4);
+        text-align: center;
+    }
+    .section7-div p{
+        margin-top: 1.5vh;
+        font-size: 2vw;
+    }
+    .section7-div p>span{
+        margin-top: 1.5vh;
+        font-size: 1.3vw;
+        color: rgba(74, 127, 225,1);
+    }
+    /*.................................................section-8..................................*/
+    .plans{
+        display: flex;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 6vw;
+    }
+    .plan{
+        border-radius: 1vh;
+        width:45vw;
+        height: 54vh;
+        background-color:rgb(245, 245, 245) ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .plan-image{
+        width: 10vw;
+        height: 15vh;
+        margin: -0.9vh 12vw;
+    }
+    .plan-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .plan-price{
+        display: flex;
+        justify-content: space-between;
+    }
+    .plan-price>p{
+        font-size: 2.5vh;
+        padding: 2vh 1vw;
+    }
+    .plan-price h1{
+      font-size: 4vh;
+      /* padding-top: 1vh; */
+      margin-top: 1vh;
+      padding-right: 1vw;
+    } 
+    .plan-price>div>p{
+        margin-top: -1vh;
+        font-size: 2vh;
+    }
+    .plan-content label{
+        margin-top: 1vh ;
+        font-size: 2.6vh;
+    }
+    .plan-content input{
+        margin-top: 1.5vh;
+        margin-left: 0.5vw;
+        width: 2vw;
+        height: 2vh;
+    }
+    .plan-content{
+        padding: 3.8vh 1vw;
+    }
+    .plan button{
+        width: 40vw;
+        height: 5vh;
+        background-color: rgb(174, 8, 230);
+        color: white;
+        font-size: 2vh;
+        font-weight: bold;
+        border: none;
+        margin-left: 1.5vw;
+        margin-top: -1vh;
+        border-radius: 1vh;
+    }
+
+}
+
+/* -------------------------------------Media Query between 1025px and 1300px----------------------------------------- */
+
+@media only screen and (min-width:1025px) and (max-width:1300px){
+
+    /* --------------------------------Header part------------------------------------- */
+    .header-div3 i{
+        font-size: 2vw;
+        margin-left: 2vw;
+    }
+    .header-div3 .cart-value{
+        width: 4vw;
+        height: 4vh;
+        line-height: 4vh;
+        font-size: 1.2vw;
+        border-radius: 2vw;
+        top: -4vh;
+        right: -1.2vw;
+    }
+    #toggle-bar{
+        margin-top: 0.5vh;
+        font-size: 2.5vw;
+    }
+
+    /* -------------------------------section-3 Icon part--------------------------------------- */
+    .section3-div p:first-of-type{
+        font-size: 1.8vw;
+    }
+    .section3-div p:last-of-type{
+        font-size: 1.5vw;
+    }
+
+    /* -------------------------------- Section-4 Watches------------------------------------- */
+    .section4{
+        /* border: 2px solid red; */
+        width: 85%;
+        height: calc(23vw*9/4);
+        margin: 3vh 0 0 10vw;
+    }
+
+    .section4-div{
+        width: 38vw;
+        height: calc(20vw*9/4);
+        margin-top: 3vh;
+        /* border: 2px solid black; */
+    }
+    .section4-div img{
+        width:30vw;
+        height: calc(16vw*9/4);
+        margin-left: 10vw;
+        margin-left: 4vw;
+    }
+    .section4-div div{
+        width: 18vw;
+        height: 13vh;
+        top: calc(13vw*9/4);
+    }
+    .section4-div div>p:first-of-type{
+        font-size: 2.2vw;
+    }
+    .section4-div div>p:last-of-type{
+        font-size: 1.4vw;
+    }
+    
+    .section4-div i{
+        width: 12vw;
+    }
+    /*..............................................section-8..............................................*/
+    .plans{
+        display: flex;
+        justify-content: center;
+        gap: 3vw;
+    }
+    .plan{
+        border-radius: 1vh;
+        width:28vw;
+        height: 56vh;
+        background-color:rgb(245, 245, 245) ;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    }
+    .plan-image{
+        width: 6vw;
+        height: 15vh;
+        margin: -0.9vh 6vw;
+    }
+    .plan-image img{
+        width: 100%;
+        height: 100%;
+    }
+    .plan-price{
+        display: flex;
+        justify-content: space-between;
+    }
+    .plan-price>p{
+        font-size: 2.5vh;
+        padding: 2vh 1vw;
+    }
+    .plan-price h1{
+      font-size: 4vh;
+      /* padding-top: 1vh; */
+      margin-top: 1vh;
+      padding-right: 1vw;
+    } 
+    .plan-price>div>p{
+        margin-top: -1vh;
+        font-size: 2vh;
+    }
+    .plan-content label{
+        margin-top: 1vh ;
+        font-size: 1.9vh;
+    }
+    .plan-content input{
+        margin-top: 1.5vh;
+        margin-left: 0.5vw;
+        width: 2vw;
+        height: 2vh;
+    }
+    .plan-content{
+        padding: 3.8vh 1vw;
+    }
+    .plan button{
+        width: 25vw;
+        height: 5vh;
+        background-color: rgb(174, 8, 230);
+        color: white;
+        font-size: 2vh;
+        font-weight: bold;
+        border: none;
+        margin-left: 1.5vw;
+        margin-top: -1vh;
+        border-radius: 1vh;
+    } 
+
+}

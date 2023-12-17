@@ -1,0 +1,677 @@
+
+.offers{
+    background-color: rgb(242, 178, 99);
+    margin-top: -10px;
+}
+
+/*header*/
+header{
+    margin-top: -2px;
+    display:grid;
+    grid-template-columns: 15% 85%;
+    background-color: #1f1c1d;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+}
+header .logo{
+  width: 100%;
+}
+header .logo:hover{
+    transform: scale(1.1);
+}
+.menu-bar{
+    text-align: center;
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.menu-bar ul li{
+    width:120px;
+    height:30px;
+    margin: 5px 10px;
+    padding:10px 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(250, 242, 242);
+}
+.menu-bar ul li:hover{
+    background-color: rgb(37, 25, 213);
+    border-radius: 3px;
+    z-index:2
+   
+}
+
+.sub-menu1{
+    display: none;
+}
+.sub-menu1 ul li{
+    width:120px;
+    height:30px;
+    margin-left:-25px;
+    padding-left: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    z-index:2;
+    background-color: rgb(31, 21, 208) ;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -22px;
+    z-index: 2;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    top:100px;
+}
+.sub-menu1 ul li:hover{
+    background-color: rgb(22, 22, 23);
+}
+.sub-sub-menu1{
+    display: none;
+}
+.sub-menu1 ul li:hover .sub-sub-menu1{
+    display:block;
+    position: absolute;
+    left:152px;
+    top:5px;
+    background-color:rgb(31, 21, 208) ;
+    z-index:2;
+}
+.sub-menu1 ul li:hover .sub-sub-menu1 ul{
+    display: block;
+}
+.sub-sub-menu1 ul li:hover{
+    background-color:  rgb(5, 5, 5);
+}
+.sub-sub-menu2{
+    display: none;
+}
+.sub-menu1 ul li:hover .sub-sub-menu2{
+    display:block;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+    background-color: rgb(31, 21, 208) ;
+}
+.sub-menu1 ul li:hover .sub-sub-menu2 ul{
+    display: block;
+}
+.sub-sub-menu2 ul li:hover{
+    background-color:rgb(6, 6, 6) ;
+
+
+}
+
+.sub-sub-menu1 ,.sub-sub-menu2 ul li{
+    color:white;
+}
+/*banner section1*/
+.banner-block{
+    margin-top: -20px;
+    background: linear-gradient(to right,#ffd3a5 ,#fd6585);
+    width:100%;
+    height:700px;
+    z-index: 1;
+}
+.banner-text{
+    position:absolute;
+    top:200px;
+    left:100px;
+    width:520px;
+    height:500px;
+ 
+}
+.banner-text h1{
+ font-size:xx-large;
+}
+.banner-text h3{
+    font-size:x-large;
+}
+   .banner-text p{
+    font-size:X-large;
+    text-align: justify;
+}
+.banner-button{
+    position: absolute;
+    top:610px;
+    left:250px;
+    width: 200px;
+    height: 50px;
+    background: linear-gradient(to right, skyblue , purple);
+    border:none;
+    border-radius: 3px;
+}
+.banner-button:hover{
+    transform: scale(1.1);
+}
+.banner-button a{
+    text-decoration: none;
+    font-size: large;
+    color: rgb(253, 249, 249);
+}
+.banner-form{
+    position: absolute;
+    top:200px;
+    left:850px;
+    width:450px;
+    height:400px;
+    background-color: white;
+    overflow: auto;
+    border-radius: 5px;
+    z-index: 0;
+}
+.banner-form h3{
+    margin-left: 20px;
+    font-size: x-large;
+}
+.banner-form ul{
+    margin-left: 30px;
+    color: #6dd5ed;
+}
+.banner-form ul li{
+    color:black;
+    font-size: larger;
+}
+/*banner section2*/
+.banner-section2{
+     width:70%;
+     height:170px;
+     margin-top: -70px;
+     margin-left: 200px;
+     border-radius: 10px;
+    background-color: #9adaf0;
+}
+.banner-section2 div{
+    display: flex;
+    justify-content: center;   
+}
+.banner-section2 span{
+    display:block;
+    margin: 10px;
+    padding: 20px;
+}
+.banner-section2 span i{
+    padding:5px;
+    padding-bottom: 40px;
+}
+.banner-section2 span p{
+    font-size: x-large;
+    color: rgb(18, 17, 17);
+}
+/*slider section*/
+.slider-section h2{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 40px;
+}
+.logos-slide{
+    display:flex;
+    flex-direction: row;
+    gap:20px;
+    padding:20px 20px;
+    animation: slide 15s linear infinite;
+   }
+   @keyframes slide {
+    0%{
+      transform: translateX(0%);
+    }
+    100%{
+      transform: translateX(-100%);
+    }
+    
+   }
+   .slide{
+    height:150px;
+    margin: 10px;
+   }
+   .logo{
+    overflow: hidden;
+   }
+/*trending-courses*/
+.trend-courses{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    row-gap: 40px;
+}
+.course-card1{
+    width: 330px;
+    height:330px;
+    display: inline;
+    box-shadow: 3px 3px 5px 6px #ccc;
+}
+.card1-part1{
+    padding:5px;
+    margin:0px;
+    color: white;
+    width: 320px;
+    height: 80px;
+}
+.card1-part1{
+    background:linear-gradient(to right,rgb(122, 203, 235),rgb(236, 81, 236));
+
+}
+ .course-card2 .card1-part1{
+    background:linear-gradient(to right,rgb(240, 43, 43),rgb(240, 107, 11));
+
+}
+.course-card3 .card1-part1{
+    background:linear-gradient(to right,rgb(40, 225, 62),rgb(224, 242, 103));
+ 
+
+}
+.course-card4 .card1-part1{
+    background:linear-gradient(to right,rgb(225, 40, 213),rgb(184, 113, 238));
+
+}
+.course-card5 .card1-part1{
+    background:linear-gradient(to right,rgb(225, 40, 213),rgb(184, 113, 238));
+
+}
+.course-card6 .card1-part1{
+    background:linear-gradient(to right,rgb(56, 64, 233),rgb(90, 244, 241));
+
+}
+.course-card7 .card1-part1{
+    background:linear-gradient(to right,rgb(40, 154, 225),rgb(114, 189, 243));
+
+}
+.card1-part1 h2{
+    font-size: 25px;
+    text-align: center;
+    color: white;
+}
+.card1-part1 i{
+    padding: 5px;
+}
+.card1-part2 p{
+    text-align: justify;
+    padding-left: 3px;
+    font-size: large;
+    padding-top: 2px;
+    padding-left: 5px;
+    padding-right: 5px;
+}
+.course>h2{
+    text-align: center;
+    font-size: xx-large;
+    margin-top: 10px;
+    padding: 20px;
+}
+/* tools and technologies */
+.tools-tech{
+    box-sizing: border-box;
+    margin-top:70px;
+  } 
+  .tools-tech h2{
+   text-align: center;
+   font-size: xx-large;
+  }
+  .tools{
+   display:flex;
+   flex-direction: row;
+   flex-wrap: wrap;
+   width:1000px;
+   height:650px;
+   background-color: azure;
+   margin-left: 200px;
+  }
+  .tools .html{
+   width:120px;
+   height:120px;
+    background-color: bisque;
+   margin: 30px;
+   padding: 10px;
+   border-radius: 3px; 
+  }
+  .tools  i{
+   text-align: center;
+   font-size:60px ;
+   padding: 30px;
+   margin: 10px;
+   color: orange;
+  }
+  .tools h4{
+    text-align: center;
+    font-size: x-large;
+    margin-top:-5px ;
+    
+  }
+  .html:hover{
+   transform: scale(1.2);
+  }
+  /* Key Features */
+  .keyfeatures{
+    box-sizing: border-box;
+    height: 450px;
+
+}
+.keyfeatures h2{
+    text-align: center;
+    font-size: xx-large;
+}
+.features{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+    margin-left: -30px;
+}
+.features .Faculty{
+    width:220px;
+    height: 300px;
+    padding: 10px;
+    box-shadow: 5px 5px 5px rgb(80, 74, 74);
+    background-color: rgb(207, 241, 241);
+    margin-left: 60px;
+}
+/* .features .part1 .img{
+    padding-left: 60px;
+    margin-left: 20px;
+    width: 150px;
+} */
+.features .part1{
+    padding-left: 30px;
+    margin-top: -5px;
+}
+.features .part2{
+    padding-left: 3px;
+    margin: -5px;
+}
+.features .part2 h3{
+    text-align: center;
+    font-size: x-large;
+    margin-top: -5px;
+}
+.features .part2 p{
+    text-align: justify;
+    font-size: larger;
+    margin: 2px;
+    padding: 2px;
+}
+.Faculty:hover{
+    transform: scale(1.1);
+}
+/* projects */
+.projects-list{
+    /* background-color: rgb(246, 179, 102); */
+    box-sizing: border-box;
+   }
+
+   .projects-list .heading{
+    text-align: center;
+    font-size: xx-large;
+   }
+   .project{
+    display:flex;
+    flex-direction: row;
+    gap: 10px;
+    margin-left: 60px;
+   }
+   .project1{
+    padding: 10px;
+    margin:10px;
+    width:300px;
+    height:270px;
+   background:rgb(237, 218, 221);
+   border-radius: 5px;
+   }
+   .project1:hover{
+    box-shadow: 5px 5px 7px rgb(147, 146, 146);
+    transform: scale(1.1);
+   }
+   .project1 h3{
+    text-align: center;
+   }
+   .project1 h4{
+    text-align: center;
+    font-size: large;
+   }
+   .project1 p{
+    text-align: justify;
+    /* justify-content: center; */
+    font-size: larger;
+   }
+   /* success stories */
+   .logo-slide .card{
+    width:300px;
+    height:200px;
+    box-shadow: 3px 3px 3px rgb(145, 137, 137);
+    padding: 10px;
+    margin: 10px;
+}
+  .logos{
+    overflow: hidden;
+  }
+  .logo-slide{
+    display: flex;
+    flex-direction: row;
+    gap: 40px;
+    margin-top: 10px;
+    padding: 10px;
+    animation: slide 15s linear infinite;
+  }
+  @keyframes slide {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+    
+  }
+  .card h2{
+    font-size: x-large;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+  }
+  .card .name{
+    background:linear-gradient(to right,rgb(240, 43, 43),rgb(240, 107, 11));
+    width:320px;
+    height:100px;
+    margin-top: -30px;
+    margin-left: -10px;
+  }
+  .card p{
+    font-size: large;
+    text-align: justify;
+  }
+  .success>h2{
+    padding: 10px;
+    text-align: center;
+    font-size: xx-large;
+  }
+  /* Branches */
+  .branch-section{
+    display: grid;
+    grid-template-columns: 70% 30%;
+    margin-left: 30px;
+}
+.branches{
+    display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap:30px;
+}
+.branch-card{
+    width:450px;
+    height:200px;
+    border:2px solid black;
+    padding:20px;
+    background-color: black;
+}
+.branch-card .card-head{
+    font-size: x-large;
+    text-align: center;
+    color: white;
+}
+.branch-card .card-content{
+    font-size: larger;
+    text-align: center;
+    color:white;
+}
+.branch-card  a{
+    text-align: center;
+    text-decoration: none;
+    margin-left: 150px;
+    font-size: larger;
+    color: rgb(233, 107, 11);
+
+}
+.branch-card  i{
+    padding:5px;
+}
+.location>h2{
+font-size: xx-large;
+text-align: center;
+margin:30px 150px;
+}
+.form-section{
+margin-left: 40px;
+
+}
+.form-section form{
+background-color: rgb(43, 25, 208);
+padding:10px;
+width:300px;
+height:350px;
+margin-top: 90px;
+border-radius: 10px;
+}
+.form-section  form>div{
+padding:5px;
+margin:5px;
+margin-left: 15px;
+}
+.form-section form>div>input{
+width:245px;
+height:25px;
+}
+.form-section form>div>select{
+width:250px;
+height:30px;
+}
+.form-section form>div>h2{
+text-align: center;
+color: rgb(245, 243, 239);
+}
+.form-section form>div>button{
+    width:100px;
+    height:30px;
+    margin-left: 60px;
+    margin-bottom: 40px;
+    background-color: white;
+    border-radius: 5px;
+   }
+   .form-section form>div a{
+    text-decoration: none;
+    color: rgb(14, 13, 13);
+    font-size:15px;
+   }
+   /* contact-list */
+   .contact{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+.num-card{
+    width:400px;
+    height:60px;
+    box-shadow: 5px 5px 5px black;
+    background-color: rgb(233, 230, 225);
+}
+.num-card p, .num-card1 p{
+    font-size: larger;
+    padding: 20px 40px;
+    margin:2px 40px;
+}
+.num-card i, .num-card1 i{
+    padding:5px;
+}
+.num-card1 p{
+    color: white;
+}
+.num-card1{
+    width:500px;
+    height:60px;
+    box-shadow: 5px 5px 5px rgb(182, 178, 178);
+    background-color: rgb(82, 66, 226);
+    margin:50px 500px;
+}
+.contact-list h2{
+    font-size: xx-large;
+    text-align: center;
+    margin: 40px;
+}
+/* footer */
+footer{
+    background-color: black;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    height: 400px;
+   }
+   footer .footer-part{
+    width:350px;
+    height: 150px;
+   }
+   .footer-part p{
+    text-align: justify;
+    padding:10px;
+    font-size: large;
+    color: white;
+   }
+   .footer-part h2{
+    color: white;
+   }
+   .footer-part ul{
+    list-style: none;
+    margin-left: 5px;
+    margin-top: 30px;
+   }
+   .footer-part ul li{
+    
+    padding: 4px;
+    
+   }
+   .footer-part ul li:hover{
+      transform: scale(1.1);
+     
+   }
+   .footer-part ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+   }
+   .footer-part1{
+    margin-left: 50px;
+   }
+   .footer-part2{
+    margin-left: 650px;
+   }
+   .footer-part2 h3{
+    text-align: center;
+    font-size: x-large;
+    padding: 10px;
+    color:white
+   }
+   .footer-part2 i{
+    padding: 7px;
+
+   }
+   /* .message{
+    font-size: xx-large;
+    top:350px;
+    left:1420px;
+    position: fixed;
+   } */

@@ -1,0 +1,577 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>eCommerce_Trendlist_Today</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:ital,wght@0,300;0,400;0,500;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="./CSS_Files/style.css">
+</head>
+
+<body>
+    <!-- .................................Header part of a website......................................... . .-->
+    <header>
+        <div class="header-div1">
+            <img src="./Assets/AchiversIT_logo.png" alt="AchiversIT_logo">
+        </div>
+
+        <div class="header-div2">
+            <i class="fa-solid fa-bars" id="toggle-bar"></i>
+            <div>
+                <ul class="toggle-bar-list">
+                    <li>ARTS & CRAFTS <span>&gt;</span>
+                        <div class="toggle-bar-list-sub">
+                            <ul>
+                                <li>New Arrivals</li>
+                                <li>Dressess</li>
+                                <li>Jackets</li>
+                                <li>Hoodies & Sweatshirts</li>
+                                <li>Sweaters</li>
+                                <li>Tops & Tees</li>
+                                <li>Party Dressess</li>
+                            </ul>
+                            <ul>
+                                <li>Trending</li>
+                                <li>Dressess</li>
+                                <li>Jackets</li>
+                                <li>Hoodies & Sweatshirts</li>
+                                <li>Sweaters</li>
+                                <li>Tops & Tees</li>
+                                <li>Party Dressess</li>
+                            </ul>
+                            <div>
+                                <img src="./Assets/ATM-Card1.jpeg" alt="ATM-Card1"><br>
+                                <img src="./Assets/ATM-Card2.jpeg" alt="ATM-Card2">
+                            </div>
+                        </div>
+                    </li>
+                    <li>FASHION <span>&gt;</span></li>
+                    <li>HEALTH & HOUSEHOLD <span>&gt;</span></li>
+                    <li>BAGES & SHOES <span>&gt;</span></li>
+                    <li>JEWELRY & WATCHES <span>&gt;</span></li>
+                    <li>BEAUTY & HEALTH <span>&gt;</span></li>
+                    <li>ELECTRONICS <span>&gt;</span></li>
+                    <li>HOME & GARDEN <span>&gt;</span></li>
+                </ul>
+            </div>
+            <select name="select" id="select">
+                <option value="All">All</option>
+                <option value="All">Venkata Sai</option>
+                <option value="All">Sailagisetty</option>
+            </select>
+            <input type="text" name="text" id="search" placeholder="Search">
+            <i class="fa-solid fa-magnifying-glass"></i>
+        </div>
+
+        <div class="header-div3">
+            <i class="fa-solid fa-user" id="profile-icon"></i>
+            <div class="profile-list">
+                <ul>
+                    <li><a href="#"><i class="fa-solid fa-user"></i>My Profile</a></li>
+                    <li><a href="#"><i class="fa-solid fa-gear"></i>Settings</a></li>
+                    <li><a href="#"><i class="fa-solid fa-bell"></i>Notifications</a></li>
+                    <li><a href="#"><i class="fa-solid fa-arrow-right-from-bracket"></i>Logout</a></li>
+                </ul>
+            </div>
+            <i class="fa-solid fa-cart-shopping"><span class="cart-value">0</span></i>
+            <i class="fa-solid fa-heart"></i>
+        </div>
+    </header>
+
+    <!-- ............................... Banner in website ......................................... -->
+    <section class="banner">
+        <div class="banner-div">
+            <p>Effortlessly cool, for the traditionalists of today <br><span>Explore Collections</span></p>
+        </div>
+        <div>
+            <span class="banner-prev"><i class="fa-solid fa-angle-left fa-xl"></i></span>
+            <span class="banner-next"><i class="fa-solid fa-angle-right fa-xl"></i></span>
+        </div>
+        <div class="banner-carousel">
+            <input type="radio" name="carousel1" class="input-radio">
+            <input type="radio" name="carousel2" class="input-radio">
+            <input type="radio" name="carousel3" class="input-radio">
+        </div>
+    </section>
+
+    <!-- ..............................................main-section comes here............................. -->
+    <main>
+        <!-- ..............................................Section-3 Icons ............................. -->
+        <section class="section3">
+
+            <div class="section3-div">
+                <i class="fa-solid fa-truck-fast"></i>
+                <h3>Two-hours delivery</h3>
+                <p>Available in most metros on selected in-stocks products</p>
+                <p>LEARN MORE</p>
+            </div>
+
+            <div class="section3-div">
+                <i class="fa-solid fa-message"></i>
+                <h3>Get help buying</h3>
+                <p>Have a question? Call a Specilist or chat online for help</p>
+                <p>CONTACT US</p>
+            </div>
+
+            <div class="section3-div">
+                <i class="fa-solid fa-download"></i>
+                <h3>Find the card for you</h3>
+                <p>Get 3% Daily Cash with special financing offers from us</p>
+                <p>LEARN MORE</p>
+            </div>
+            
+        </section>
+
+        <!-- ..............................................Section-4 Watches ............................. -->
+        <section class="section4">
+            <div class="section4-div">
+                <img src="./Assets/product-11.png" alt="Metro Watch" style="mix-blend-mode:darken;">
+                <div>
+                    <p>Metro 38 Date</p>
+                    <p>Reference 1102</p>
+                    <i class="fa-solid fa-cart-shopping"><span> $ 399</span></i>
+                </div>
+            </div>
+
+            <div class="section4-div">
+                <img src="./Assets/product-11.png" alt="Metro Watch" style="mix-blend-mode:darken;">
+                <div>
+                    <p>Metro 38 Date</p>
+                    <p>Reference 1102</p>
+                    <i class="fa-solid fa-cart-shopping"><span> $ 399</span></i>
+                </div>
+            </div>
+        </section>
+
+        <!-- ..........................................Section-5 Oculus Banner............................. -->
+        <section class="section5">
+            <div>
+                <img src="./Assets/content-2.jpg" alt="Oculus Banner">
+            </div>
+            <div>
+                <p>ALL-IN-ONE VR</p>
+                <p>Always ready when you are</p>
+                <p>Oculus Go is our all-in-one VR headset that's portable and easy to use. Experience entertainment on the go with no PC, wires or hassless</p>
+            </div>
+        </section>
+
+        <!-- .........................................Section-6 Oculus Quest's............................ -->
+        <!-- <section class="section6">
+            <div class="section6-div">
+                <img src='./Assets/product-2.jpg'   alt="Oculus Quest" class="section6-img">
+                <div>
+                    <p class="section6-p1"></p>
+                    <p class="section6-p2"></p>
+                    <p>
+                        <i class="fa-solid fa-dollar-sign" name="price-icon"></i> 
+                        <span class="Add-to-cart"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="section6-div">
+                <img src="./Assets/product-2.jpg" alt="Oculus Quest" class="section6-img">
+                <div>
+                    <p class="section6-p1">Oculus Quest</p>
+                    <p class="section6-p2"></p>
+                    <p>
+                        <i class="fa-solid fa-dollar-sign" name="price-icon"></i> 
+                        <span class="Add-to-cart"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+
+            <div class="section6-div">
+                <img src="./Assets/product-2.jpg" alt="Oculus Quest" class="section6-img">
+                <div>
+                    <p class="section6-p1">Oculus Quest</p>
+                    <p class="section6-p2"></p>
+                    <p>
+                        <i class="fa-solid fa-dollar-sign" name="price-icon"></i> 
+                        <span class="Add-to-cart"><i class="fa-solid fa-cart-shopping"></i>&nbsp;Add To Cart</span>
+                    </p>
+                </div>
+            </div>
+        </section> -->
+        <section class="quest-products">
+            <div class="product1">
+              <div class="product-img">
+                  <img src="./assets/product-2.jpg" alt="Oculus=quest">
+              </div>
+               <div class="product-price">
+                  <h3>Oculus Quest</h3>
+                  <p>All-in-one gaming headset with light weight and flexible design</p>
+                  <h4>$ 399</h4></span>
+                 <button><i class="fa-solid fa-cart-shopping fa-xs"></i>Add To Cart</button>
+               </div>
+            </div>
+            <div class="product1">
+              <div class="product-img">
+                  <img src="./assets/product-2.jpg" alt="Oculus=quest">
+              </div>
+               <div class="product-price">
+                  <h3>Oculus Quest</h3>
+                  <p>All-in-one gaming headset with light weight and flexible design</p>
+                  <h4>$ 399</h4></span>
+                 <button><i class="fa-solid fa-cart-shopping fa-xs"></i>Add To Cart</button>
+               </div>
+            </div>
+            <div class="product1 product3">
+              <div class="product-img">
+                  <img src="./assets/product-2.jpg" alt="Oculus=quest">
+              </div>
+               <div class="product-price">
+                  <h3>Oculus Quest</h3>
+                  <p>All-in-one gaming headset with light weight and flexible design</p>
+                  <h4>$ 399</h4></span>
+                 <button><i class="fa-solid fa-cart-shopping fa-xs"></i>Add To Cart</button>
+               </div>
+            </div>
+         </section>
+
+        <!-- .................................Section-7 Prime-Ambassador .............................. -->
+        <section class="section7">
+            <div class="section7-div">
+                <p>THE PRIME AMBASSADOR <br><span>EXPLORE COLLECTIONS</span></p>
+            </div>
+        </section>
+
+        <!-- .................................Section-8 Stater Plan................................... -->  
+        <!-- <section class="section8">
+            <div class="section8-div">
+                <div class="section8-div1">
+                    <span>Stater Plan</span> 
+                    <i class="fa-solid fa-dollar-sign"> 10</i>
+                    <span>/weekly</span>
+                </div>
+                <img src="./Assets/pricing-5.png" alt="Stater Plan">
+                <div class="section8-div2">
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;2 Accounts</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;Up to 5 GB Space</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;1 Domain</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;24/7 Support</p>
+                    <p>GET STARTED</p>
+                </div>
+            </div>
+
+            <div class="section8-div">
+                <div class="section8-div1">
+                    <span>Stater Plan</span> 
+                    <i class="fa-solid fa-dollar-sign"> 50</i>
+                    <span>/monthly</span>
+                </div>
+                <img src="./Assets/pricing-5.png" alt="Stater Plan">
+                <div class="section8-div2">
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;2 Accounts</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;Up to 5 GB Space</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;1 Domain</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;24/7 Support</p>
+                    <p>GET STARTED</p>
+                </div>
+            </div>
+
+            <div class="section8-div">
+                <div class="section8-div1">
+                    <span>Stater Plan</span> 
+                    <i class="fa-solid fa-dollar-sign"> 90</i>
+                    <span>/yearly</span>
+                </div>
+                <img src="./Assets/pricing-5.png" alt="Stater Plan">
+                <div class="section8-div2">
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;2 Accounts</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;Up to 5 GB Space</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;1 Domain</p>
+                    <p><i class="fa-solid fa-square-check"></i>&nbsp;&nbsp;&nbsp;24/7 Support</p>
+                    <p>GET STARTED</p>
+                </div>
+            </div>
+        </section>       -->
+        <section class="plans">
+            <div class="plan">
+              <div class='plan-price'>
+                  <p >Starter plan</p>
+                 <div>
+                  <h1>$10</h1>
+                  <p>/weekly</p>
+                 </div>
+              </div>
+              <div class="plan-image">
+                  <img src="./assets/pricing-5.png" alt="pricing image">
+              </div>
+              <div class="plan-content">
+                  <input type="checkbox" id="check"/>
+                  <label for="check">2 Acoounts</label><br/>
+                  <input type="checkbox" id="space"/>
+                  <label for="space">Up to 5GB Space</label><br/>
+                  <input type="checkbox" id="domain"/>
+                  <label for="domain">1 Domain</label><br/>
+                  <input type="checkbox" id="support"/>
+                  <label for="support">24/7 support</label>
+              </div>
+              <button>GET STARTED</button>
+            </div>
+            <div class="plan">
+              <div class='plan-price'>
+                  <p >Starter plan</p>
+                 <div>
+                  <h1>$10</h1>
+                  <p>/weekly</p>
+                 </div>
+              </div>
+              <div class="plan-image">
+                  <img src="./assets/pricing-5.png" alt="pricing image">
+              </div>
+              <div class="plan-content">
+                  <input type="checkbox" id="check"/>
+                  <label for="check">2 Acoounts</label><br/>
+                  <input type="checkbox" id="space"/>
+                  <label for="space">Up to 5GB Space</label><br/>
+                  <input type="checkbox" id="domain"/>
+                  <label for="domain">1 Domain</label><br/>
+                  <input type="checkbox" id="support"/>
+                  <label for="support">24/7 support</label>
+              </div>
+              <button>GET STARTED</button>
+            </div>
+            <div class="plan">
+              <div class='plan-price'>
+                  <p >Starter plan</p>
+                 <div>
+                  <h1>$10</h1>
+                  <p>/weekly</p>
+                 </div>
+              </div>
+              <div class="plan-image">
+                  <img src="./assets/pricing-5.png" alt="pricing image">
+              </div>
+              <div class="plan-content">
+                  <input type="checkbox" id="check"/>
+                  <label for="check">2 Acoounts</label><br/>
+                  <input type="checkbox" id="space"/>
+                  <label for="space">Up to 5GB Space</label><br/>
+                  <input type="checkbox" id="domain"/>
+                  <label for="domain">1 Domain</label><br/>
+                  <input type="checkbox" id="support"/>
+                  <label for="support">24/7 support</label>
+              </div>
+              <button>GET STARTED</button>
+            </div>
+         </section>
+
+        <!-- ...............................Section-9 About Oculus VR................................... -->
+        <section class="section9">
+            <div class="section9-div1">
+                <p>All-In-One VR</p>
+                <p>Oculus VR</p>
+            </div>
+            <div class="section9-div2">
+                <img src="./Assets/product-3.jpg" alt="About Oculus VR">
+            </div>
+            <div class="section9-div3">
+                <img src="./Assets/thunb-1.jpg" alt="Thumbnail-1">
+                <img src="./Assets/thunb-2.jpg" alt="Thumbnail-2">
+                <img src="./Assets/thunb-3.jpg" alt="Thumbnail-3">
+                <img src="./Assets/thunb-4.jpg" alt="Thumbnail-4">
+                <img src="./Assets/thunb-5.jpg" alt="Thumbnail-5">
+            </div>
+            <div class="section9-div4">
+                <div class="section9-sub-div1">
+                    <p>All-In-One VR</p>
+                    <p>Oculus VR</p>
+                    <p>Select Your Oculus:</p>
+                    <img src="./Assets/product-items-1.jpg" alt="product-items-1">
+                    <img src="./Assets/product-items-2.jpg" alt="product-items-2">
+                    <img src="./Assets/product-items-3.jpg" alt="product-items-3">
+                    <div class="section9-selects-items">
+                        <div>
+                            <p style="color: black;">Select Color: <span id="color-output">Grey</span></p>
+                            <div class="section9-selects-items-sub1">
+                                <span id="color1"></span>
+                                <span id="color2"></span>
+                                <span id="color3"></span>
+                            </div>
+                        </div>
+                        <div>
+                            <p style="color: black;">Memory(GB):</p>
+                            <select name="Gb" id="Gb">
+                                <option value="32gb">32gb</option>
+                            </select>
+                        </div>
+                        <div>
+                            <p style="color: black;">Select Quantity:</p>
+                            <div class="section9-selects-items-sub3">
+                                <span id="minus">-</span>
+                                <span id="value">1</span>
+                                <span id="plus">+</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="country">
+                        <p style="color: black;">Select Shipping Country: + $ 30 USD</p>
+                        <select name="country" id="country">
+                            <option value="--Select Country--">--Select Country--</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="section9-sub-div2">
+                    <p>Price:</p>
+                    <span>$ 149 USD&nbsp;&nbsp;</span>
+                    <span>$ 179 USD</span>
+                    <div >
+                        <i class="fa-solid fa-cart-shopping">&nbsp;ADD TO CART</i>
+                        <i class="fa-solid fa-cart-shopping">&nbsp;BUY NOW</i>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ...............................Section-10 Haritage 1921 Watch............................ -->
+        <section class="section10">
+            <div class="section10-div">
+                <div>
+                    <p>Haritage 1921</p>
+                    <p>Minimalistic & Modern</p>
+                    <p>EXPLORE&nbsp;&nbsp;<i class="fa-solid fa-greater-than"></i></p>
+                </div>
+                <img src="./Assets/product-4.jpg" alt="Metro Watch">
+            </div>
+
+            <div class="section10-div">
+                <div>
+                    <p>Haritage 1921</p>
+                    <p>Minimalistic & Modern</p>
+                    <p>EXPLORE&nbsp;&nbsp;<i class="fa-solid fa-greater-than"></i></p>
+                </div>
+                <img src="./Assets/product-4.jpg" alt="Metro Watch">
+            </div>
+            <div class="section10-div">
+                <div>
+                    <p>Haritage 1921</p>
+                    <p>Minimalistic & Modern</p>
+                    <p>EXPLORE&nbsp;&nbsp;<i class="fa-solid fa-greater-than"></i></p>
+                </div>
+                <img src="./Assets/product-4.jpg" alt="Metro Watch">
+            </div>
+        </section>
+
+        <!-- ...............................Section-11 Small boxes............................ -->
+        <section class="section11">
+            <div class="section11-div">
+                <i class="fa-solid fa-user-group"></i>
+                <p>300</p>
+                <p>Happy Client</p>
+            </div>
+
+            <div class="section11-div">
+                <i class="fa-solid fa-check"></i>
+                <p>30</p>
+                <p>Complete Projects</p>
+            </div>
+
+            <div class="section11-div">
+                <i class="fa-regular fa-hourglass"></i>
+                <p>12</p>
+                <p>Pending Projects</p>
+            </div>
+
+            <div class="section11-div">
+                <i class="fa-solid fa-mug-hot"></i>
+                <p>960</p>
+                <p>Cup Of Tea</p>
+            </div>
+        </section>
+    </main>
+
+    <!-- ....................................Footer of our Webpage....................................... -->
+    <footer>
+        <hr id="footer-hr1">
+        <div class="footer-div1">
+            <div>
+                <p>Get in touch</p>
+                <p>Be the first to know when new product drop and stay tuned.</p>
+            </div>
+
+            <div>
+                <label for="email">Enter your email address</label><br>
+                <input type="email" name="email" id="email" placeholder="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;user@email.com">
+                <i class="fa-solid fa-user"></i>
+                <i class="fa-solid fa-share"></i>
+            </div>
+        </div>
+        <hr class="footer-hr2">
+
+        <div class="footer-div2">
+            <div>
+                <p>Follow Us: 
+                    <i class="fa-brands fa-facebook"></i> 
+                    <i class="fa-brands fa-twitter"></i> 
+                    <i class="fa-brands fa-linkedin"></i>
+                    <i class="fa-brands fa-instagram"></i>
+                    <i class="fa-brands fa-whatsapp"></i>
+                </p>
+            </div>
+            <div class="Payemts-options">
+                <p>We Accept:</p>
+                <img src="./Assets/payment.png" alt="Payment-Cards">
+            </div>
+        </div>
+        <hr class="footer-hr2">
+
+        <div class="footer-div3">
+            <div class="footer-div3-sub">
+                <ul>
+                    <li>Categories</li>
+                    <li><a href="#">Outfit</a></li>
+                    <li><a href="#">Sunglasses</a></li>
+                    <li><a href="#">Watches</a></li>
+                    <li><a href="#">Bags</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-div3-sub">
+                <ul>
+                    <li>Information</li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact Us</a></li>
+                    <li><a href="#">Sitemap</a></li>
+                    <li><a href="#">FAQs Page</a></li>
+                    <li><a href="#">Comming Soon</a></li>
+                    <li><a href="#">404 Page</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-div3-sub">
+                <ul>
+                    <li>My Account</li>
+                    <li><a href="#">Orders</a></li>
+                    <li><a href="#">Download</a></li>
+                    <li><a href="#">Address</a></li>
+                    <li><a href="#">Account details</a></li>
+                    <li><a href="#">Logout</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-div3-sub">
+                <ul>
+                    <li>Community</li>
+                    <li><a href="#">VR for Good</a></li>
+                    <li><a href="#">Launch Pad</a></li>
+                    <li><a href="#">Creators</a></li>
+                    <li><a href="#">Forums</a></li>
+                    <li><a href="#">Support</a></li>
+                </ul>
+            </div>
+        </div>
+        <p id="copy-right">Made with &copy; Naga chandrika. All rights reserved</p>
+
+    </footer>
+
+    <script src="./JavaScript/script.js"></script>
+</body>
+
+</html>

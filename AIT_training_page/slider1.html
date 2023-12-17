@@ -1,0 +1,87 @@
+<div class="slider">
+    <div class="slide-track">
+        <div class="slide">
+          <img src="./assets/capgem.png" alt="capgemini"/>
+        </div>
+        <div class="slide">
+          <img src="./assets/deloitte.png" alt="Deloitte"/>
+       </div>
+       <div class="slide">
+          <img src="./assets/cname1.jpeg" alt="cname"/>
+      </div>
+      <div class="slide">
+          <img src="./assets/L&T.jpeg" alt="L&T"/>
+      </div>
+      <div class="slide">
+          <img src="./assets/Allegis.png" alt="Allegis"/>
+      </div>
+      <div class="slide">
+          <img src="./assets/Gitam.png" alt="mercdes"/>
+      </div>
+      <div class="slide">
+         <img src="./assets/mfocus.png" alt="micro focus"/>
+      </div>
+      <div class="slide">
+         <img src="./assets/Mindtrr.png" alt="Mindtree"/>
+      </div>
+      <div class="slide">
+         <img src="./assets/sterlite.png" alt="Sterlite"/>
+      </div>
+      <div class="slide">
+         <img src="./assets/tcs.png" alt="Tcs"/>
+      </div>
+      <div class="slide">
+         <img src="./assets/Tech-mah.png" alt="Tech-mahindra"/>
+      </div>
+      <div class="slide">
+         <img src="./assets/virtusa.png" alt="virtusa"/>
+      </div>
+      <div class="slide">
+         <img src="./assets/Wipro.png" alt="Wipro"/>
+      </div>
+   </div>
+
+
+
+
+   .slider-section{
+    justify-content: center;
+    align-items: center;
+    
+
+
+}
+.slider{
+    height:150px;
+    position: relative;
+    overflow: hidden;
+    margin:-15px;
+    /* width:auto; */
+    width: 98vw;
+    box-sizing: border-box;
+
+}
+.slider .slide-track{
+    display:flex;
+    width:calc(250px*13);
+    animation: scroll 40s linear infinite;
+   
+}
+@keyframes scroll {
+    0%{
+        transform: translateX(0);
+    }
+   100%{
+    transform: translateX(calc(-250px*6));
+   }
+    
+}
+.slider .slide{
+    width:250px;
+    height:200px;
+}
+.slider-section h2{
+    font-size: xx-large;
+    text-align: center;
+    margin-top: 40px;
+}

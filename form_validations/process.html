@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>process page</title>
+</head>
+<body>
+    <script>
+     let queryString=window.location.search;
+     var queryStringParams=new URLSearchParams(queryString);
+     document.write('name is ',queryStringParams.get('fullname'),"<br/>")
+     document.write('email is is ',queryStringParams.get('email'),"<br/>")
+     document.write('name is ',queryStringParams.get('number'),"<br/>")
+     document.write('password is ',queryStringParams.get('password'),'<br/>')
+     document.write('checkpassword is ',queryStringParams.get('cpassword'),"<br/>")
+    </script>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <style>
+        .branch-section{
+            display: grid;
+            grid-template-columns: 70% 30%;
+        }
+        .branches{
+            display:flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            gap:30px;
+        }
+        .branch-card{
+            width:450px;
+            height:200px;
+            border:2px solid black;
+            padding:20px;
+            background-color: black;
+        }
+        .branch-card .card-head{
+            font-size: x-large;
+            text-align: center;
+            color: white;
+        }
+        .branch-card .card-content{
+            font-size: larger;
+            text-align: center;
+            color:white;
+        }
+        .branch-card  a{
+            text-align: center;
+            text-decoration: none;
+            margin-left: 150px;
+            font-size: larger;
+            color: rgb(233, 107, 11);
+    
+        }
+        .branch-card  i{
+            padding:5px;
+        }
+       .location>h2{
+        font-size: xx-large;
+        text-align: center;
+       }
+       .form-section{
+        margin-left: 40px;
+
+       }
+       .form-section form{
+        background-color: rgb(43, 25, 208);
+        padding:10px;
+        width:300px;
+        height:370px;
+        margin-top: 90px;
+        border-radius: 10px;
+       }
+       .form-section  form>div{
+        padding:5px;
+        margin:5px;
+        margin-left: 15px;
+       }
+       .form-section form>div>input{
+        width:245px;
+        height:25px;
+       }
+       .form-section form>div>select{
+        width:250px;
+        height:30px;
+       }
+       .form-section form>div>h2{
+        text-align: center;
+        color: rgb(245, 243, 239);
+       }
+       .form-section form>div>button{
+        width:100px;
+        height:30px;
+        margin-left: 60px;
+        margin-bottom: 40px;
+        background-color: white;
+        border-radius: 5px;
+       }
+       .form-section form>div a{
+        text-decoration: none;
+       }
+    </style>
+</head>
+<body>
+    <section class="branch-section">
+      <div class="location">
+        <h2>Our Branches</h2>
+        <div class="branches">
+            <div class="branch-card">
+               <p class="card-head">BTM Layout - Bangalore</p>
+               <p class="card-content">#63, 1st Floor, 16th Main, 8th Cross BTM 1st Stage,
+                 BTM Layout, Bengaluru, Karnataka 560029
+                </p>
+                <div class="google-map"><a href="btm.html"><i class="fa-solid fa-location-dot fa-lg"></i>get directions</a></div>
+            </div>
+            <div class="branch-card">
+                <p class="card-head">Marathahalli - Bangalore</p>
+                <p class="card-content">#1, 4th Main Rd, Extension, Ayyappa Layout, Chandra Layout, Marathahalli, Bengaluru, Karnataka 560037
+                 </p>
+                 <div class="google-map"><a href="marathalli.html"><i class="fa-solid fa-location-dot fa-lg"></i>get directions</a></div>
+             </div>
+             <div class="branch-card">
+                <p class="card-head">Kukatpally - Hyderabad</p>
+                <p class="card-content">#101, 1st floor, Vandana's Trade Center, Beside Padmavathi Plaza, Above Union Bank, Kukatpally Housing Board Colony, Kukatpally, Hyderabad, Telangana 500072
+                 </p>
+                 <div class="google-map"><a href="hydrabad.html"><i class="fa-solid fa-location-dot fa-lg"></i>get directions</a></div>
+             </div>
+             <div class="branch-card">
+                <p class="card-head">RajajiNagar - Bangalore</p>
+                <p class="card-content">Opening soon</p>
+                 
+             </div>
+        </div>
+     </div>
+     <div class="form-section">
+        <form>
+            <div>
+                <h2>Request a call back</h2>
+            </div>
+            <div>
+                <input type="text" placeholder="Name" id="name" name="name"/>
+            </div>
+            <div>
+                <input type="email" placeholder="Email" id="email" name="email"/>
+            </div>
+            <div>
+                <input type="tel" placeholder="Phone number" id="pno" name="phone number"/>
+            </div>
+            <div>
+                 <select id="state">
+                    <option>--select state--</option>
+                    <opton value="Andhra pradesh">Andhra Pradesh</opton>
+                     <option value="Telangana">Telangana</option>
+                     <option value="Chennai">Chennai</option>
+                     <option value="Karnataka">Karnataka</option>
+                 </select>
+            </div>
+            <div>
+                <select id="course">
+                    <option>-- select course--</option>
+                    <option value="Frontend">Frontend course</option>
+                    <option value="Java">Java Full stack</option>
+                    <option value="Python">Python fullstack</option>
+                </select>
+            </div>
+            <div>
+                <button type="submit"><a href="#">Submit</a></button>
+            </div>
+        </form>
+     </div>
+    </section>
+</body>
+</html>

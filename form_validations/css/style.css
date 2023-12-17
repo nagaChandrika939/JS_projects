@@ -1,0 +1,30 @@
+body>div{
+    background-color: rgb(206, 234, 234);
+    width: 600px;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+form{
+  padding: 10px;  
+}
+div>h1{
+    padding: 10px;
+}
+input{
+    margin: 10px;
+    width: 300px;
+    height: 40px;
+    border-radius: 4px;
+}
+#submit,#reset{
+    width: 90px;
+    height: 35px;
+    font-size: 18px;
+    color: white;
+    background-color: rgb(164, 82, 241);
+    border: none;
+    border-radius: 7px;
+}

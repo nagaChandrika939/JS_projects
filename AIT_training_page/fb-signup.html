@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        form
+        {
+            margin-left:450px;
+            margin-top: 130px;
+            width:450px;
+            height:550px;
+            padding-left: 20px;
+            padding-top: 8px;
+            padding-right: 40px;
+            background-color: white;
+        }
+        h1
+        {
+            margin-bottom:2px;
+        }
+        .con1
+        {
+            margin-bottom: 15px;
+        }
+        .con2
+        {
+            margin-top: 15px;
+        }
+        .con3
+        {
+            width:200px;
+            height:30px;
+            margin-bottom:15px;
+            border-radius: 5px;
+        }
+        .con4
+        {
+            margin-bottom: 15px;
+            width:415px;
+            height:30px;
+            border-radius: 5px;
+        }
+        select
+        {
+            width:140px;
+            height:30px;
+            border-radius: 5px;
+            margin-bottom:12px;
+        }
+        .con0
+        {
+            border:2px solid black;
+            padding-top: 2px;
+            padding-right: 20px;
+            padding-left: 20px;
+            padding-bottom: 3px;
+            margin-bottom: 15px;
+            border-radius: 5px;
+            margin-right: 15px;
+            margin-top: 15px;
+        }
+        .gen
+        {
+            padding-bottom: 3px;
+        }
+        body
+        {
+          background-color: rgb(230, 226, 226);
+        }
+        .con5
+        {
+            height:40px;
+            width:120px;
+            margin-left: 140px;
+            border-radius: 5px;
+            background-color: blue;
+            color: white;
+            font-size: large;
+        }
+        .con6
+        {
+            color: white;
+            font-size: large;
+        }
+        a{
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <form>
+        <div>
+           <h1> Sign Up</h1>
+        </div>
+        <div class="con1">
+            It's quick and easy
+        </div>
+        <hr>
+        <div class="con2">
+            <span><input type="text" name="fname"  class="con3" placeholder="First name"/></span>
+            <span><input type="text" name="lname" placeholder="Last name" class="con3" /><span></div>
+        </div>
+        <div>
+            <input type="email" class= "con4" name="email" placeholder="Email adress or mobile number"/>
+        </div>
+        <div>
+            <input type="password" name="password" class="con4" placeholder="New password"/>
+        </div>
+        <div>
+           <label for ="Dob">Date Of Birth<br/></label>
+           <select id="Dob">
+            <option>--select--</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+           </select>
+           <select id="Dob">
+            <option>--select--</option>
+            <option value="jan">jan</option>
+            <option value="feb">feb</option>
+            <option value="march">march</option>
+            <option value="april">april</option>
+            <option value="may">may</option>
+            <option value="june">june</option>
+            <option value="july">july</option>
+            <option value="aug">aug</option>
+           </select>
+           <select id="Dob">
+            <option>--select--</option>
+            <option value="2021">2021</option>
+            <option value="2022">2022</option>
+            <option value="2023">2023</option>
+            <option value="2024">2024</option>
+            <option value="2025">2025</option>
+            <option value="2026">2026</option>
+            <option value="2027">2027</option>
+            <option value="2028">2028</option>
+           </select>
+        </div>
+        <div>
+            <label class="gen">Gender<br/></label>
+            <span class="con0">
+                <label for="female">Female</label>
+                <input type="radio" id="female" name="gender">
+            </span>
+            <span class="con0">
+                <label for="male">male</label>        
+                <input type="radio" id="male" name="gender">
+            </span>
+            <span class="con0">
+                <label for="custom">Custom</label>
+                <input type="radio" id="custom" name="gender">
+            </span>
+        </div>
+        <div>
+            <p>People who use our service may have uploaded your contact information to Facebook.learn more</p>
+        </div>
+        <div>
+            <p>
+                By clicking Sign up.You agree to our terms.Privacy policies and Cookies policy
+                you may receive SMS notification from us and can opt at any time.
+            </p>
+        </div>
+        <div>
+            <button type="button" class="con5"><a class="con6" href="#"> Sign up</a></button>
+        </div>
+    </form>
+</body>
+</html>

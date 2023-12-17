@@ -1,0 +1,26 @@
+body{
+    display: grid;
+    justify-content: center;
+    align-items: center;
+    height: 800px;
+    background-color: #D9AFD9;
+    background-image: linear-gradient(0deg, #D9AFD9 0%, #97D9E1 100%);
+    
+    
+}
+div{
+    width:600px;
+    height:500px;
+    margin-top: -100px;
+}
+.no-text,.no,.adress-text{
+   text-align: center;
+}
+i{
+    padding:10px;
+}
+p,h3{
+    font-size: x-large;
+    margin-top: -20px;
+    margin-left: 10px;
+}

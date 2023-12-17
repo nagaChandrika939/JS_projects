@@ -1,0 +1,51 @@
+form{
+    width:600px;
+    height:450px;
+    background-color:rgb(116, 213, 213);
+}
+form h2{
+   padding-top: 15px;
+   padding-left: 5px;
+}
+.form{
+    display: flex;
+}
+.form-items{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+.form-image{
+    margin-top: 3px;
+    margin-left: 20px;
+}
+.form-items div{
+    margin: 2px;
+    padding: 3px;
+}
+.form-items div label{
+    font-size: large;
+}
+.form-items div>input{
+    margin-top: 5px;
+    position: relative;
+    width:280px;
+    height:25px;
+}
+.form-items div select{
+    width:280px;
+    height:35px;
+}
+.form-button{
+    margin-left: 60px;
+    padding: 5px;
+    width:120px;
+    background-color: rgb(229, 102, 33);
+    border:none;
+    border-radius: 3px;
+}
+.form-button a{
+    text-decoration: none;
+    font-size: large;
+    color: white;
+}
+   

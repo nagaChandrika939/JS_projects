@@ -1,0 +1,276 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+<style>
+.quest-products{
+    display: grid;
+    grid-template-columns: 28% 28% 28%;
+    margin-left: 12vw;
+
+}
+.product1{
+    width: 22vw;
+    height: 52vh;
+    background-color: #eaeded;
+
+}
+.product-img{
+    width: 22vw;
+    height: 32vh;
+   
+
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-price{
+    width: 100%;
+    /* height:; */
+
+}
+.product-price h3{
+    margin:2vh 1vw;
+}
+.product-price p{
+    margin-left: 1vw;
+    font-size: 1.8vh;
+    color: grey;
+}
+.product-price h4{
+    display: inline;
+    margin-left: 1vw;
+    color: red;
+    font-size: 2.5vh;
+}
+.product-price button{
+    display: inline;
+    font-size: 1.9vh;
+    font-weight: bold;
+    margin-left: 5vw;
+    background-color: rgb(121, 12, 222);
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 0.8vh;
+}
+.product-price button i{
+    padding: 0.3vh 0.3vw;
+}
+@media all and (max-width:480px){
+ .quest-products{
+    display: grid;
+    grid-template-columns:repeat(1,1fr);
+    margin-left: 20vw;
+    row-gap: 3vh;
+
+}
+.product1{
+    width: 50vw;
+    height: 52vh;
+    background-color: #eaeded;
+
+}
+.product-img{
+    width: 50vw;
+    height: 32vh;
+   
+
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-price{
+    width: 100%;
+    /* height:; */
+
+}
+.product-price h3{
+    margin:2vh 1vw;
+}
+.product-price p{
+    margin-left: 1vw;
+    font-size: 1.8vh;
+    color: grey;
+}
+.product-price h4{
+    display: inline;
+    margin-left: 1vw;
+    color: red;
+    font-size: 2.5vh;
+}
+.product-price button{
+    display: inline;
+    font-size: 1.9vh;
+    font-weight: bold;
+    margin-left: 5vw;
+    background-color: rgb(121, 12, 222);
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 0.8vh;
+}
+.product-price button i{
+    padding: 0.3vh 0.3vw;
+}
+}
+@media all and (min-width:480px) and (max-width:768px){
+    .quest-products{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    margin-left: 18vw;
+
+}
+.product1{
+    width: 58vw;
+    height: 58vh;
+    background-color: #eaeded;
+
+}
+.product-img{
+    width: 58vw;
+    height: 38vh;
+   
+
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-price{
+    width: 100%;
+    /* height:; */
+
+}
+.product-price h3{
+    margin:2vh 1vw;
+}
+.product-price p{
+    margin-left: 1vw;
+    font-size: 1.8vh;
+    color: grey;
+}
+.product-price h4{
+    display: inline;
+    margin-left: 1vw;
+    color: red;
+    font-size: 2.5vh;
+}
+.product-price button{
+    display: inline;
+    font-size: 1.9vh;
+    font-weight: bold;
+    margin-left: 5vw;
+    background-color: rgb(121, 12, 222);
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 0.8vh;
+}
+.product-price button i{
+    padding: 0.3vh 0.3vw;
+}
+}
+@media all and (min-width:768px) and (max-width:1024px){
+    .quest-products{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    margin-left: 12vw;
+  }
+.product1{
+    width: 35vw;
+    height: 52vh;
+    background-color: #eaeded;
+
+}
+.product-img{
+    width: 35vw;
+    height: 32vh;
+   
+
+}
+.product-img img{
+    width: 100%;
+    height: 100%;
+}
+.product-price{
+    width: 100%;
+    /* height:; */
+
+}
+.product-price h3{
+    margin:2vh 1vw;
+}
+.product-price p{
+    margin-left: 1vw;
+    font-size: 1.8vh;
+    color: grey;
+}
+.product-price h4{
+    display: inline;
+    margin-left: 1vw;
+    color: red;
+    font-size: 2.5vh;
+}
+.product-price button{
+    display: inline;
+    font-size: 1.9vh;
+    font-weight: bold;
+    margin-left: 5vw;
+    background-color: rgb(121, 12, 222);
+    color: white;
+    border: none;
+    padding: 1vh 1vw;
+    border-radius: 0.8vh;
+}
+.product-price button i{
+    padding: 0.3vh 0.3vw;
+}
+.product3{
+    margin-left: 20vw;
+}
+}
+</style>
+</head>
+<body>
+    <section class="quest-products">
+        <div class="product1">
+          <div class="product-img">
+              <img src="./assets/product-2.jpg" alt="Oculus=quest">
+          </div>
+           <div class="product-price">
+              <h3>Oculus Quest</h3>
+              <p>All-in-one gaming headset with light weight and flexible design</p>
+              <h4>$ 399</h4></span>
+             <button><i class="fa-solid fa-cart-shopping fa-xs"></i>Add To Cart</button>
+           </div>
+        </div>
+        <div class="product1">
+          <div class="product-img">
+              <img src="./assets/product-2.jpg" alt="Oculus=quest">
+          </div>
+           <div class="product-price">
+              <h3>Oculus Quest</h3>
+              <p>All-in-one gaming headset with light weight and flexible design</p>
+              <h4>$ 399</h4></span>
+             <button><i class="fa-solid fa-cart-shopping fa-xs"></i>Add To Cart</button>
+           </div>
+        </div>
+        <div class="product1 product3">
+          <div class="product-img">
+              <img src="./assets/product-2.jpg" alt="Oculus=quest">
+          </div>
+           <div class="product-price">
+              <h3>Oculus Quest</h3>
+              <p>All-in-one gaming headset with light weight and flexible design</p>
+              <h4>$ 399</h4></span>
+             <button><i class="fa-solid fa-cart-shopping fa-xs"></i>Add To Cart</button>
+           </div>
+        </div>
+     </section> 
+</body>
+</html>

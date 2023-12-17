@@ -1,0 +1,88 @@
+
+header{
+    display:grid;
+    grid-template-columns: 15% 85%;
+    background-color: rgb(18, 182, 182);
+}
+header .logo{
+  width: 100%;
+}
+.menu-bar{
+    text-align: center;
+}
+.menu-bar ul{
+    display: flex;
+    list-style: none;
+    justify-content: space-around;
+}
+.menu-bar ul li{
+    width:120px;
+    height:30px;
+    margin: 5px 10px;
+    padding:10px 10px;
+}
+.menu-bar ul li a{
+    text-decoration: none;
+    font-size: large;
+    color: black;
+}
+.menu-bar ul li:hover{
+    background-color: rgb(163, 240, 240);
+    border-radius: 3px;
+}
+.sub-menu1{
+    display: none;
+}
+.sub-menu1 ul li{
+    width:120px;
+    height:30px;
+    margin-left:-25px;
+    padding-left: 10px;
+
+}
+.menu-bar ul li:hover .sub-menu1{
+    display: block;
+    background-color: rgb(163, 240, 240) ;
+    position: absolute;
+    margin-top: 15px;
+    margin-left: -22px;
+}
+.menu-bar ul li:hover .sub-menu1 ul{
+    display: block;
+    top:100px;
+}
+.sub-menu1 ul li:hover{
+    background-color: rgb(18, 182, 182);
+}
+.sub-sub-menu1{
+    display: none;
+}
+.sub-menu1 ul li:hover .sub-sub-menu1{
+    display:block;
+    position: absolute;
+    left:152px;
+    top:5px;
+    background-color:rgb(18, 182, 182) ;
+}
+.sub-menu1 ul li:hover .sub-sub-menu1 ul{
+    display: block;
+}
+.sub-sub-menu1 ul li:hover{
+    background-color:  rgb(163, 240, 240);
+}
+.sub-sub-menu2{
+    display: none;
+}
+.sub-menu1 ul li:hover .sub-sub-menu2{
+    display:block;
+    position: absolute;
+    left: 150px;
+    top: 60px;
+    background-color: rgb(18, 182, 182) ;
+}
+.sub-menu1 ul li:hover .sub-sub-menu2 ul{
+    display: block;
+}
+.sub-sub-menu2 ul li:hover{
+    background-color:rgb(163, 240, 240) ;
+}

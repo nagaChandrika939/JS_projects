@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1.0",>
+    <title>Document</title>
+<style>
+    .plans{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+.plan{
+    border-radius: 1vh;
+    width:21vw;
+    height: 56vh;
+    background-color:rgb(245, 245, 245) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.plan-image{
+    width: 6vw;
+    height: 15vh;
+    margin: -0.9vh 6vw;
+}
+.plan-image img{
+    width: 100%;
+    height: 100%;
+}
+.plan-price{
+    display: flex;
+    justify-content: space-between;
+}
+.plan-price>p{
+    font-size: 2.5vh;
+    padding: 2vh 1vw;
+}
+.plan-price h1{
+  font-size: 4vh;
+  /* padding-top: 1vh; */
+  margin-top: 3vh;
+  padding-right: 1vw;
+} 
+.plan-price>div>p{
+    margin-top: -3vh;
+    font-size: 2vh;
+}
+.plan-content label{
+    margin-top: 1vh ;
+    font-size: 1.9vh;
+}
+.plan-content input{
+    margin-top: 1.5vh;
+    margin-left: 0.5vw;
+    width: 2vw;
+    height: 2vh;
+}
+.plan-content{
+    padding: 3.8vh 1vw;
+}
+.plan button{
+    width: 18vw;
+    height: 5vh;
+    background-color: rgb(174, 8, 230);
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    border: none;
+    margin-left: 1.5vw;
+    margin-top: -1vh;
+    border-radius: 1vh;
+}
+
+@media all and (max-width:480px){
+    .plans{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 5vw;
+    margin-left: 6vw;
+}
+.plan{
+    border-radius: 1vh;
+    width:80vw;
+    height: 56vh;
+    background-color:rgb(245, 245, 245) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.plan-image{
+    width: 22vw;
+    height: 15vh;
+    margin: -0.9vh 20vw;
+}
+.plan-image img{
+    width: 100%;
+    height: 100%;
+}
+.plan-price{
+    display: flex;
+    justify-content: space-between;
+}
+.plan-price>p{
+    font-size: 2.5vh;
+    padding: 2vh 1vw;
+}
+.plan-price h1{
+  font-size: 4vh;
+  /* padding-top: 1vh; */
+  margin-top: 3vh;
+  padding-right: 1vw;
+} 
+.plan-price>div>p{
+    margin-top: -3vh;
+    font-size: 2vh;
+}
+.plan-content label{
+    margin-top: 1vh ;
+    font-size: 1.9vh;
+}
+.plan-content input{
+    margin-top: 1.5vh;
+    margin-left: 0.5vw;
+    width: 2vw;
+    height: 2vh;
+}
+.plan-content{
+    padding: 3.8vh 1vw;
+}
+.plan button{
+    width: 76vw;
+    height: 5vh;
+    background-color: rgb(174, 8, 230);
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    border: none;
+    margin-left: 1.5vw;
+    margin-top: -1vh;
+    border-radius: 1vh;
+} 
+}
+@media all and (min-width:480px) and (max-width:768px){
+.plans{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 4vw;
+}
+.plan{
+    border-radius: 1vh;
+    width:42vw;
+    height: 56vh;
+    background-color:rgb(245, 245, 245) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.plan-image{
+    width: 10vw;
+    height: 15vh;
+    margin: -0.9vh 12vw;
+}
+.plan-image img{
+    width: 100%;
+    height: 100%;
+}
+.plan-price{
+    display: flex;
+    justify-content: space-between;
+}
+.plan-price>p{
+    font-size: 2.5vh;
+    padding: 2vh 1vw;
+}
+.plan-price h1{
+  font-size: 4vh;
+  /* padding-top: 1vh; */
+  margin-top: 1vh;
+  padding-right: 1vw;
+} 
+.plan-price>div>p{
+    margin-top: -1vh;
+    font-size: 2vh;
+}
+.plan-content label{
+    margin-top: 1vh ;
+    font-size: 1.9vh;
+}
+.plan-content input{
+    margin-top: 1.5vh;
+    margin-left: 0.5vw;
+    width: 2vw;
+    height: 2vh;
+}
+.plan-content{
+    padding: 3.8vh 1vw;
+}
+.plan button{
+    width: 38vw;
+    height: 5vh;
+    background-color: rgb(174, 8, 230);
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    border: none;
+    margin-left: 1.5vw;
+    margin-top: -1vh;
+    border-radius: 1vh;
+}
+}
+@media all and (min-width:768px) and (max-width:1024px){
+    .plans{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 6vw;
+}
+.plan{
+    border-radius: 1vh;
+    width:32vw;
+    height: 56vh;
+    background-color:rgb(245, 245, 245) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.plan-image{
+    width: 10vw;
+    height: 15vh;
+    margin: -0.9vh 12vw;
+}
+.plan-image img{
+    width: 100%;
+    height: 100%;
+}
+.plan-price{
+    display: flex;
+    justify-content: space-between;
+}
+.plan-price>p{
+    font-size: 2.5vh;
+    padding: 2vh 1vw;
+}
+.plan-price h1{
+  font-size: 4vh;
+  /* padding-top: 1vh; */
+  margin-top: 1vh;
+  padding-right: 1vw;
+} 
+.plan-price>div>p{
+    margin-top: -1vh;
+    font-size: 2vh;
+}
+.plan-content label{
+    margin-top: 1vh ;
+    font-size: 1.9vh;
+}
+.plan-content input{
+    margin-top: 1.5vh;
+    margin-left: 0.5vw;
+    width: 2vw;
+    height: 2vh;
+}
+.plan-content{
+    padding: 3.8vh 1vw;
+}
+.plan button{
+    width: 28vw;
+    height: 5vh;
+    background-color: rgb(174, 8, 230);
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    border: none;
+    margin-left: 1.5vw;
+    margin-top: -1vh;
+    border-radius: 1vh;
+}
+
+}
+@media all and (min-width:1024px) and (max-width:1280px){
+    .plans{
+    display: flex;
+    justify-content: center;
+    gap: 3vw;
+}
+.plan{
+    border-radius: 1vh;
+    width:28vw;
+    height: 56vh;
+    background-color:rgb(245, 245, 245) ;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.plan-image{
+    width: 6vw;
+    height: 15vh;
+    margin: -0.9vh 6vw;
+}
+.plan-image img{
+    width: 100%;
+    height: 100%;
+}
+.plan-price{
+    display: flex;
+    justify-content: space-between;
+}
+.plan-price>p{
+    font-size: 2.5vh;
+    padding: 2vh 1vw;
+}
+.plan-price h1{
+  font-size: 4vh;
+  /* padding-top: 1vh; */
+  margin-top: 1vh;
+  padding-right: 1vw;
+} 
+.plan-price>div>p{
+    margin-top: -1vh;
+    font-size: 2vh;
+}
+.plan-content label{
+    margin-top: 1vh ;
+    font-size: 1.9vh;
+}
+.plan-content input{
+    margin-top: 1.5vh;
+    margin-left: 0.5vw;
+    width: 2vw;
+    height: 2vh;
+}
+.plan-content{
+    padding: 3.8vh 1vw;
+}
+.plan button{
+    width: 25vw;
+    height: 5vh;
+    background-color: rgb(174, 8, 230);
+    color: white;
+    font-size: 2vh;
+    font-weight: bold;
+    border: none;
+    margin-left: 1.5vw;
+    margin-top: -1vh;
+    border-radius: 1vh;
+} 
+}
+</style>
+</head>
+<body>
+    <section class="plans">
+        <div class="plan">
+          <div class='plan-price'>
+              <p >Starter plan</p>
+             <div>
+              <h1>$10</h1>
+              <p>/weekly</p>
+             </div>
+          </div>
+          <div class="plan-image">
+              <img src="./assets/pricing-5.png" alt="pricing image">
+          </div>
+          <div class="plan-content">
+              <input type="checkbox" id="check"/>
+              <label for="check">2 Acoounts</label><br/>
+              <input type="checkbox" id="space"/>
+              <label for="space">Up to 5GB Space</label><br/>
+              <input type="checkbox" id="domain"/>
+              <label for="domain">1 Domain</label><br/>
+              <input type="checkbox" id="support"/>
+              <label for="support">24/7 support</label>
+          </div>
+          <button>GET STARTED</button>
+        </div>
+        <div class="plan">
+          <div class='plan-price'>
+              <p >Starter plan</p>
+             <div>
+              <h1>$10</h1>
+              <p>/weekly</p>
+             </div>
+          </div>
+          <div class="plan-image">
+              <img src="./assets/pricing-5.png" alt="pricing image">
+          </div>
+          <div class="plan-content">
+              <input type="checkbox" id="check"/>
+              <label for="check">2 Acoounts</label><br/>
+              <input type="checkbox" id="space"/>
+              <label for="space">Up to 5GB Space</label><br/>
+              <input type="checkbox" id="domain"/>
+              <label for="domain">1 Domain</label><br/>
+              <input type="checkbox" id="support"/>
+              <label for="support">24/7 support</label>
+          </div>
+          <button>GET STARTED</button>
+        </div>
+        <div class="plan">
+          <div class='plan-price'>
+              <p >Starter plan</p>
+             <div>
+              <h1>$10</h1>
+              <p>/weekly</p>
+             </div>
+          </div>
+          <div class="plan-image">
+              <img src="./assets/pricing-5.png" alt="pricing image">
+          </div>
+          <div class="plan-content">
+              <input type="checkbox" id="check"/>
+              <label for="check">2 Acoounts</label><br/>
+              <input type="checkbox" id="space"/>
+              <label for="space">Up to 5GB Space</label><br/>
+              <input type="checkbox" id="domain"/>
+              <label for="domain">1 Domain</label><br/>
+              <input type="checkbox" id="support"/>
+              <label for="support">24/7 support</label>
+          </div>
+          <button>GET STARTED</button>
+        </div>
+     </section>
+</body>
+</html>

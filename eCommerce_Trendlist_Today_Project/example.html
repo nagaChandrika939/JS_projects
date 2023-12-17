@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Animation Iteration Example</title>
+    <style>
+        :root {
+            --primary-color: #3498db;
+            --secondary-color: #e74c3c;
+        }
+
+        .button {
+            background-color: var(--primary-color);
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="button">iamdjjcnjbchbc</p>
+    <img src="./Assets/product-11.png" alt="" style="width: 50%;height: 70vh; border: 1px solid red;">
+
+    <script>
+        let value=1;
+        for(i=0;i<=3;i++){
+            value+=1;
+        }
+        localStorage.setItem('value',value);
+
+
+        const Value = localStorage.getItem('value');
+        console.log('value:', Value);
+
+        // sessionStorage.setItem('theme', 'dark');
+
+        // const theme = sessionStorage.getItem('theme');
+        // console.log('Theme:', theme);
+
+
+    </script>
+</body>
+
+</html>
